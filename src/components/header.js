@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdLocationPin } from "react-icons/md";
 import { BrowserRouter, Link } from "react-router-dom";
 
 function Header() {
@@ -14,14 +14,17 @@ function Header() {
     >
       <div className="p-3 font-bold font-sans text-lg">
         <h1>Tony Fu</h1>
-        <h1>Vancouver, British Columbia</h1>
+        <div className="flex justify-start">
+          <MdLocationPin size="25px"/>
+          <h1>Vancouver, British Columbia</h1>
+        </div>
       </div>
       <div className="absolute top-0 right-0 p-3 flex justify-end">
         <a href="https://github.com/tfu2003" target="_blank" rel="noreferrer">
-          <AiFillGithub size="45px"/>
+          <AiFillGithub size="40px"/>
         </a>
         <ButtonMailto
-          label={<MdEmail size="45px"/>}
+          label={<MdEmail size="40px"/>}
           mailto="mailto:officialtonyfu@gmail.com"
         />
       </div>
