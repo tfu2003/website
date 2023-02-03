@@ -1,6 +1,5 @@
 import Intro from "./components/intro";
 import Header from "./components/header";
-import Background from "./components/images/background.jpeg";
 
 function App() {
   return (
