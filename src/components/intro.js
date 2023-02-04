@@ -1,12 +1,39 @@
-import React from "react";
+import { React, useState } from "react";
+import { motion } from "framer-motion";
+import Characters from "./characters";
 import Profile from "./images/profile.jpeg";
 
 function Intro() {
+  const [replay, setReplay] = useState(true);
+  const placeholderText = [
+    {
+      type: "heading1",
+      text: "Hello! My name is Tony and welcome to my website!",
+    },
+  ];
+
+  const container = {
+    visible: {
+      transition: {
+        staggerChildren: 0.025,
+      },
+    },
+  };
+
   return (
     <div className="flex min-h-screen flex-col items-center pt-6 font-serif">
-      <h1 className="text-3xl">
-        Hello there! My name is Tony and welcome to my website!
-      </h1>
+      <motion.div
+        className="App"
+        initial="hidden"
+        animate={replay ? "visible" : "hidden"}
+        variants={container}
+      >
+        <div className="text-3xl">
+          {placeholderText.map((item, index) => {
+            return <Characters {...item} key={index} />;
+          })}
+        </div>
+      </motion.div>
       <div className="flex justify-between p-6 pt-24 w-2/3 space-x-10">
         <img src={Profile} alt="profile" className="max-w-xs" />
         <div className="flex flex-col items-center">
