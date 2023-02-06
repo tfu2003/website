@@ -1,6 +1,7 @@
 import { React} from "react";
 import { motion } from "framer-motion";
 import Characters from "./characters";
+import FadeIn from "react-fade-in";
 import Profile from "./images/profile.jpeg";
 
 function Intro() {
@@ -34,9 +35,14 @@ function Intro() {
         </div>
       </motion.div>
       <div className="flex justify-between p-6 pt-24 w-2/3 space-x-10">
+        <FadeIn delay="2000"> 
         <img src={Profile} alt="profile" className="max-w-xs" />
+        </FadeIn>
         <div className="flex flex-col items-center">
+          <FadeIn delay="2200">
           <h1 className="text-3xl pt-6"> About me!</h1>
+          </FadeIn>
+          <FadeIn delay="2200">
           <p className="text-lg p-6">
             I am a self-motivated and passionate individual seeking to expand my
             knowledge in technology. Currently, I am a second year Computer
@@ -48,6 +54,7 @@ function Intro() {
             curling dumbbells, binge-watching an entire Netflix series in 1 day,
             or fulfilling my ever increasing need for caffeine.
           </p>
+          </FadeIn> 
         </div>
       </div>
     </div>
