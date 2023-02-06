@@ -35,14 +35,14 @@ function Intro() {
         </div>
       </motion.div>
       <div className="flex justify-between p-6 pt-24 w-2/3 space-x-10">
-        <FadeIn delay="2000"> 
+        <FadeIn delay="2000" transitionDuration="1000"> 
         <img src={Profile} alt="profile" className="max-w-xs" />
         </FadeIn>
         <div className="flex flex-col items-center">
-          <FadeIn delay="2200">
+          <FadeIn delay="2200" transitionDuration="1000">
           <h1 className="text-3xl pt-6"> About me!</h1>
           </FadeIn>
-          <FadeIn delay="2200">
+          <FadeIn delay="2200" transitionDuration="1000">
           <p className="text-lg p-6">
             I am a self-motivated and passionate individual seeking to expand my
             knowledge in technology. Currently, I am a second year Computer
