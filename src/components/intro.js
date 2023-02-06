@@ -1,11 +1,10 @@
-import { React, useState } from "react";
+import { React} from "react";
 import { motion } from "framer-motion";
 import Characters from "./characters";
 import Profile from "./images/profile.jpeg";
 
 function Intro() {
-  const [replay, setReplay] = useState(true);
-  const placeholderText = [
+  const title = [
     {
       type: "heading1",
       text: "Hello! My name is Tony and welcome to my website!",
@@ -25,11 +24,11 @@ function Intro() {
       <motion.div
         className="App"
         initial="hidden"
-        animate={replay ? "visible" : "hidden"}
+        animate={"visible"}
         variants={container}
       >
         <div className="text-3xl">
-          {placeholderText.map((item, index) => {
+          {title.map((item, index) => {
             return <Characters {...item} key={index} />;
           })}
         </div>

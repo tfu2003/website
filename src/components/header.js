@@ -7,10 +7,13 @@ import { BrowserRouter, Link } from "react-router-dom";
 function Header() {
   const scrollDirection = useScrollDirection();
   return (
-    <div
+    <div 
+    style={{
+      zIndex: "1"
+    }}
       className={`sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
-      } h-24 bg-blue-200 transition-all duration-500`}
+      } h-24 bg-blue-200 transition-all duration-500 z-100`}
     >
       <div className="p-3 font-bold font-sans text-lg">
         <h1>Tony Fu</h1>
@@ -42,7 +45,7 @@ function useScrollDirection() {
       const direction = scrollY > lastScrollY ? "down" : "up";
       if (
         direction !== scrollDirection &&
-        (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)
+        (scrollY - lastScrollY > 1 || scrollY - lastScrollY < -10)
       ) {
         setScrollDirection(direction);
       }
