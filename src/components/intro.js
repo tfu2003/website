@@ -47,7 +47,7 @@ function Intro() {
         </FadeIn>
         <div class="flex flex-col items-center">
           <FadeIn delay="2200" transitionDuration="1000">
-            <h1 class="text-3xl pt-6"> About me!</h1>
+            <h1 class="text-3xl pt-6 font-bold"> About me!</h1>
           </FadeIn>
           <FadeIn delay="2200" transitionDuration="1000">
             <p class="text-lg p-6">
@@ -64,7 +64,7 @@ function Intro() {
           </FadeIn>
           <FadeIn delay="2800" transitionDuration="1000">
             <button
-              class="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4"
+              class="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
               onClick={handleClick}
             >
               See more!
@@ -76,7 +76,6 @@ function Intro() {
       <div ref={ref}>
         <Projects />
       </div>
-      <div style={{ height: "50rem" }} />
     </div>
   );
 }
