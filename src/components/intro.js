@@ -28,7 +28,7 @@ function Intro() {
   };
 
   return (
-    <div class="flex min-h-screen flex-col items-center pt-6 font-serif">
+    <div class="flex min-h-screen flex-col items-center pt-10 font-serif">
       <motion.div
         className="App"
         initial="hidden"
@@ -41,7 +41,7 @@ function Intro() {
           })}
         </div>
       </motion.div>
-      <div class="flex justify-between p-6 pt-24 w-2/3 space-x-10">
+      <div class="flex justify-between p-6 pt-20 w-2/3 space-x-10">
         <FadeIn delay="2000" transitionDuration="1000">
           <img src={Profile} alt="profile" class="max-w-xs" />
         </FadeIn>
@@ -72,7 +72,7 @@ function Intro() {
           </FadeIn>
         </div>
       </div>
-      <div style={{ height: "20rem" }} />
+      <div style={{ height: "10rem" }} />
       <div ref={ref}>
         <Projects />
       </div>
