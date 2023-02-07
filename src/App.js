@@ -1,6 +1,5 @@
 import Intro from "./components/intro";
 import Header from "./components/header";
-import Projects from "./components/projects";
 import { useEffect } from "react";
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
       <div>
         <Header />
         <Intro />
-        <Projects />
       </div>
     </div>
   );

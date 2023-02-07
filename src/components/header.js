@@ -11,18 +11,18 @@ function Header() {
     style={{
       zIndex: "1"
     }}
-      className={`sticky ${
+      class={`sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
       } h-24 bg-blue-200 transition-all duration-500 z-100`}
     >
-      <div className="p-3 font-bold font-sans text-lg">
+      <div class="p-3 font-bold font-sans text-lg">
         <h1>Tony Fu</h1>
-        <div className="flex justify-start">
+        <div class="flex justify-start">
           <MdLocationPin size="25px"/>
           <h1>Vancouver, British Columbia</h1>
         </div>
       </div>
-      <div className="absolute top-0 right-0 p-3 flex justify-end">
+      <div class="absolute top-0 right-0 p-3 flex justify-end">
         <a href="https://github.com/tfu2003" target="_blank" rel="noreferrer">
           <AiFillGithub size="40px"/>
         </a>
