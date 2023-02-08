@@ -1,4 +1,3 @@
-import { AiFillGithub } from "react-icons/ai";
 import Speech from "./images/speech-simulator.png";
 
 function Projects() {
@@ -33,8 +32,11 @@ function Projects() {
               </a>
             </p>
           </div>
-          <div class="pt-6">
-            <div class="flex items-end text-sm space-x-5">
+          <div class="pt-6 flex flex-col items-center">
+            <div class="text-lg font-bold">
+              Tools used:
+            </div>
+            <div class="flex items-end text-sm pt-4 space-x-5">
               <a
                 href="https://nextjs.org/docs"
                 target="_blank"
@@ -69,6 +71,16 @@ function Projects() {
               </a>
             </div>
           </div>
+          <div class="pt-4 text-end">
+                <a
+                  href="https://github.com/marcusgchan/speech-simulator"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="font-bold"
+                >
+                  Link to Github
+                </a>
+            </div>
         </div>
       </div>
     </div>
