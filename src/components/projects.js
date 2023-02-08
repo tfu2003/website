@@ -8,13 +8,13 @@ function Projects() {
       <div class="flex p-6 pt-20 w-5/6 -space-x-12">
         <img src={Speech} alt="speech" class="max-w-2xl" />
         <div class="flex flex-col items-end w-2/5">
-          <h1 class="text-xl pt-6 font-bold text-center">
+          <h1 class="text-xl pt-6 font-bold text-end">
             VR Speech Simulator
             <br />
             [nwHacks 2023 Winner]
           </h1>
           <div class="pt-6">
-            <p class="text-md bg-pink-300 p-5">
+            <p class="text-base bg-pink-300 p-5">
               VR Speech Simulator allows you practice your public speaking
               within an immersive environment. Import a script and put on a
               headset to get started. Once started, VR Speech Simulator will
@@ -22,15 +22,24 @@ function Projects() {
               <br />
               <br />
               Placed 3rd out of 131 projects in the largest hackathon in Western
-              Canada!
+              Canada. Interested?&nbsp;
+              <a
+                href="https://devpost.com/software/vr-speech-simulator"
+                target="_blank"
+                rel="noreferrer"
+                class="font-bold"
+              >
+                Click to read more!
+              </a>
             </p>
           </div>
           <div class="pt-6">
-            <div class="flex items-end space-x-5">
+            <div class="flex items-end text-sm space-x-5">
               <a
                 href="https://nextjs.org/docs"
                 target="_blank"
                 rel="noreferrer"
+                class="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
               >
                 Next.js
               </a>
@@ -38,6 +47,7 @@ function Projects() {
                 href="https://www.typescriptlang.org/"
                 target="_blank"
                 rel="noreferrer"
+                class="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
               >
                 TypeScript
               </a>
@@ -45,6 +55,7 @@ function Projects() {
                 href="https://www.prisma.io/docs"
                 target="_blank"
                 rel="noreferrer"
+                class="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
               >
                 Prisma
               </a>
@@ -52,19 +63,9 @@ function Projects() {
                 href="https://docs.pmnd.rs/react-three-fiber/"
                 target="_blank"
                 rel="noreferrer"
+                class="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
               >
                 react-three-fiber
-              </a>
-            </div>
-          </div>
-          <div class="pt-6">
-            <div class="flex items-end">
-              <a
-                href="https://github.com/marcusgchan/speech-simulator"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiFillGithub size="30px" />
               </a>
             </div>
           </div>
