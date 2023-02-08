@@ -7,29 +7,41 @@ import { BrowserRouter, Link } from "react-router-dom";
 function Header() {
   const scrollDirection = useScrollDirection();
   return (
-    <div 
-    style={{
-      zIndex: "1"
-    }}
+    <div
+      style={{
+        zIndex: "1",
+      }}
       class={`sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
       } h-24 bg-blue-200 transition-all duration-500 z-100`}
     >
-      <div class="p-3 font-bold font-sans text-lg">
-        <h1>Tony Fu</h1>
-        <div class="flex justify-start">
-          <MdLocationPin size="25px"/>
-          <h1>Vancouver, British Columbia</h1>
+      <div class="flex justify-between">
+        <div class="font-bold font-sans text-lg grid content-center h-24">
+          <h1 class="pl-1.5">Tony Fu</h1>
+          <div class="flex justify-start">
+            <MdLocationPin size="25px" />
+            <h1>Vancouver, British Columbia</h1>
+          </div>
         </div>
-      </div>
-      <div class="absolute top-0 right-0 p-3 flex justify-end">
-        <a href="https://github.com/tfu2003" target="_blank" rel="noreferrer">
-          <AiFillGithub size="40px"/>
-        </a>
-        <ButtonMailto
-          label={<MdEmail size="40px"/>}
-          mailto="mailto:officialtonyfu@gmail.com"
-        />
+        <div class="flex items-center h-24">
+          <div class="flex justify-end">
+            <div class="pr-2"> 
+            <a
+              href="https://github.com/tfu2003"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub size="40px" />
+            </a>
+            </div>
+            <div class="pr-1"> 
+            <ButtonMailto
+              label={<MdEmail size="43px" />}
+              mailto="mailto:officialtonyfu@gmail.com"
+            />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
