@@ -5,16 +5,15 @@ function Projects() {
   return (
     <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
       <h1 className="text-3xl font-bold">Projects!</h1>
-      <div className="flex p-6 pt-20 w-5/6 -space-x-12">
+      <div className="flex items-center pl-6 pt-16 -space-x-12 w-5/6">
         <img src={Speech} alt="speech" className="max-w-2xl" />
-        <div className="flex flex-col w-2/5">
-          <div>
-            <h1 className="text-xl pt-6 font-bold text-end">
+        <div className="flex flex-col">
+            <h1 className="text-xl pt-4 font-bold text-end">
               VR Speech Simulator
               <br />
               [nwHacks 2023 Winner]
             </h1>
-            <div className="pt-6">
+            <div className="pt-3">
               <p className="text-base bg-pink-300 p-5">
                 VR Speech Simulator allows you practice your public speaking
                 within an immersive environment. Import a script and put on a
@@ -34,10 +33,9 @@ function Projects() {
                 </a>
               </p>
             </div>
-          </div>
-          <div className="flex flex-col items-center pt-6 pl-12">
+          <div className="flex flex-col items-center pt-3 pl-12">
             <div className="text-lg font-bold">Tools used:</div>
-            <div className="grid grid-cols-3 gap-4 text-sm pt-4">
+            <div className="grid grid-cols-3 gap-4 text-sm pt-3">
               <a
                 href="https://nextjs.org/docs"
                 target="_blank"
@@ -63,7 +61,7 @@ function Projects() {
                 Prisma
               </a>
             </div>
-            <div className="grid grid-cols-1 gap-4 text-sm pt-4">
+            <div className="grid grid-cols-1 gap-4 text-sm pt-3">
               <a
                 href="https://docs.pmnd.rs/react-three-fiber/"
                 target="_blank"
@@ -74,7 +72,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className="pt-4 text-end">
+          <div className="pt-3 text-end">
             <a
               href="https://github.com/marcusgchan/speech-simulator"
               target="_blank"
@@ -86,11 +84,10 @@ function Projects() {
           </div>
         </div>
       </div>
-
-      <div className="flex p-6 pt-20 w-5/6 -space-x-12">
-        <div className="flex flex-col items-start w-2/5">
+      <div className="flex items-center pl-6 pt-20 w-5/6 -space-x-12">
+        <div className="flex flex-col items-start">
           <h1 className="text-xl pt-6 font-bold text-end">Reci One</h1>
-          <div className="pt-6 z-10">
+          <div className="pt-3 z-10">
             <p className="text-base bg-pink-300 p-5">
               Need a way to keep a record of your recipes? Reci One is a recipe
               website that lets users add, view and delete recipes. Users can
@@ -102,11 +99,11 @@ function Projects() {
               More functionality to come!
             </p>
           </div>
-          <div className="flex flex-col items-center pt-6 pl-1">
+          <div className="flex flex-col items-center pt-3 pl-1">
             <div className="text-lg font-bold">
               Tools used:
             </div>
-            <div className="grid grid-cols-4 gap-4 text-sm pt-4">
+            <div className="grid grid-cols-4 gap-4 text-sm pt-3">
               <a
                 href="https://nextjs.org/docs"
                 target="_blank"
@@ -140,7 +137,7 @@ function Projects() {
                 tRPC
               </a>
             </div>
-            <div className="grid grid-cols-2 gap-4 text-sm pt-4">
+            <div className="grid grid-cols-2 gap-4 text-sm pt-3">
                 <a
                   href="https://zod.dev/"
                   target="_blank"
@@ -159,7 +156,7 @@ function Projects() {
                 </a>
               </div>
           </div>
-          <div className="pt-4 text-end">
+          <div className="pt-3 text-end">
             <a
               href="https://github.com/marcusgchan/speech-simulator"
               target="_blank"
