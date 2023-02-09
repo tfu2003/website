@@ -28,29 +28,29 @@ function Intro() {
   };
 
   return (
-    <div class="flex min-h-screen flex-col items-center pt-10 font-serif">
+    <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
       <motion.div
         className="App"
         initial="hidden"
         animate={"visible"}
         variants={container}
       >
-        <div class="text-3xl">
+        <div className="text-3xl">
           {title.map((item, index) => {
             return <Characters {...item} key={index} />;
           })}
         </div>
       </motion.div>
-      <div class="flex justify-between p-6 pt-20 w-2/3 space-x-10">
+      <div className="flex justify-between p-6 pt-20 w-2/3 space-x-10">
         <FadeIn delay="2000" transitionDuration="1000">
-          <img src={Profile} alt="profile" class="max-w-xs" />
+          <img src={Profile} alt="profile" className="max-w-xs" />
         </FadeIn>
-        <div class="flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <FadeIn delay="2200" transitionDuration="1000">
-            <h1 class="text-3xl pt-6 font-bold"> About me!</h1>
+            <h1 className="text-3xl pt-6 font-bold"> About me!</h1>
           </FadeIn>
           <FadeIn delay="2200" transitionDuration="1000">
-            <p class="text-lg p-6">
+            <p className="text-lg p-6">
               I am a self-motivated and passionate individual seeking to expand
               my knowledge in technology. Currently, I am a second year Computer
               Science student at the University of British Columbia. At the
@@ -64,7 +64,7 @@ function Intro() {
           </FadeIn>
           <FadeIn delay="2800" transitionDuration="1000">
             <button
-              class="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
+              className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
               onClick={handleClick}
             >
               See more!

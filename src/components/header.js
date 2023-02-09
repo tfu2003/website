@@ -11,21 +11,21 @@ function Header() {
       style={{
         zIndex: "1",
       }}
-      class={`sticky ${
+      className={`sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
       } h-24 bg-blue-200 transition-all duration-500 z-100`}
     >
-      <div class="flex justify-between">
-        <div class="font-bold font-sans text-lg grid content-center h-24">
-          <h1 class="pl-1.5">Tony Fu</h1>
-          <div class="flex justify-start">
+      <div className="flex justify-between">
+        <div className="font-bold font-sans text-lg grid content-center h-24">
+          <h1 className="pl-1.5">Tony Fu</h1>
+          <div className="flex justify-start">
             <MdLocationPin size="25px" />
             <h1>Vancouver, British Columbia</h1>
           </div>
         </div>
-        <div class="flex items-center h-24">
-          <div class="flex justify-end">
-            <div class="pr-2"> 
+        <div className="flex items-center h-24">
+          <div className="flex justify-end">
+            <div className="pr-2"> 
             <a
               href="https://github.com/tfu2003"
               target="_blank"
@@ -34,7 +34,7 @@ function Header() {
               <AiFillGithub size="40px" />
             </a>
             </div>
-            <div class="pr-1"> 
+            <div className="pr-1"> 
             <ButtonMailto
               label={<MdEmail size="43px" />}
               mailto="mailto:officialtonyfu@gmail.com"

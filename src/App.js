@@ -7,7 +7,7 @@ function App() {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <div class="bg-gradient-to-r from-violet-200 to-pink-200 background">
+    <div className="bg-gradient-to-r from-violet-200 to-pink-200 background">
       <div>
         <Header />
         <Intro />
