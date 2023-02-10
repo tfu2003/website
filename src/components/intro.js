@@ -76,6 +76,7 @@ function Intro() {
       <div ref={ref}>
         <Projects />
       </div>
+      <div style={{ height: "10rem" }} />
     </div>
   );
 }
