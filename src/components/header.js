@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { MdEmail, MdLocationPin } from "react-icons/md";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   const scrollDirection = useScrollDirection();
@@ -74,7 +74,6 @@ function useScrollDirection() {
 
 const ButtonMailto = ({ mailto, label }) => {
   return (
-    <BrowserRouter>
       <Link
         to="#"
         onClick={(e) => {
@@ -84,7 +83,6 @@ const ButtonMailto = ({ mailto, label }) => {
       >
         {label}
       </Link>
-    </BrowserRouter>
   );
 };
 

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Characters from "./characters";
 import FadeIn from "react-fade-in";
 import Profile from "./images/profile.jpeg";
-import Projects from "./projects";
+import Project from "./project";
 
 function Intro() {
   const title = [
@@ -74,7 +74,7 @@ function Intro() {
       </div>
       <div style={{ height: "10rem" }} />
       <div ref={ref}>
-        <Projects />
+        <Project />
       </div>
       <div style={{ height: "10rem" }} />
     </div>
