@@ -1,8 +1,15 @@
 import Speech from "./images/speech-simulator.png";
 import Reci from "./images/reci-one.png";
 import Trade from "./images/trade-designer.png";
+import { useNavigate } from "react-router-dom";
 
 function Project() {
+  let navigate = useNavigate(); 
+  const route = () =>{ 
+    let path = `/projects`; 
+    navigate(path);
+  }
+
   return (
     <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
       <h1 className="text-3xl font-bold">Projects!</h1>
@@ -187,7 +194,11 @@ function Project() {
           <h1 className="text-xl font-bold text-end">Trade Designer</h1>
           <div className="pt-3">
             <p className="text-base bg-pink-300 p-5">
-              NBA trade rumors are flying. Kyrie Irving has just been traded to the Dallas Mavericks and Kevin Durant might be next. Want to make your own mock trades that would drastically help your team? With this trade designer, you can create, delete and edit trades. You can even save your trades and load them in a future session!
+              NBA trade rumors are flying. Kyrie Irving has just been traded to
+              the Dallas Mavericks and Kevin Durant might be next. Want to make
+              your own mock trades that would drastically help your team? With
+              this trade designer, you can create, delete and edit trades. You
+              can even save your trades and load them in a future session!
             </p>
           </div>
           <div className="flex flex-col items-center pt-3 pl-12">
@@ -231,11 +242,14 @@ function Project() {
           </div>
         </div>
       </div>
-      <div className="pt-20"> 
-      <button className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450">
-        Check out my other projects!
-      </button>
-      </div> 
+      <div className="pt-20">
+        <button
+          className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
+          onClick={route}
+        >
+          Check out my other projects!
+        </button>
+      </div>
     </div>
   );
 }

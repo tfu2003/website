@@ -1,15 +1,17 @@
 import { useEffect } from "react";
 import Header from "./header";
 import Intro from "./intro";
+import Contacts from "./contacts";
 
 function Main() {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
       return (
-        <div className="bg-gradient-to-r from-violet-200 to-pink-200 background">
+        <div>
             <Header/>
             <Intro/>
+            <Contacts/>
         </div>
       );
     }

@@ -1,6 +1,6 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Contacts() {
   return (
@@ -35,7 +35,6 @@ function Contacts() {
 
 const ButtonMailto = ({ mailto, label }) => {
   return (
-    <BrowserRouter>
       <Link
         to="#"
         onClick={(e) => {
@@ -45,7 +44,6 @@ const ButtonMailto = ({ mailto, label }) => {
       >
         {label}
       </Link>
-    </BrowserRouter>
   );
 };
 

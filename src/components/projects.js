@@ -1,11 +1,9 @@
-import Header from "./header";
-
 function Projects() {
-    return (
-        <div className="bg-gradient-to-r from-violet-200 to-pink-200 background">
-            <Header/>
+      return (
+        <div className="flex min-h-screen flex-col items-center font-serif">
+            hey this is where my projects are going to be
         </div>
-    );
-}
+      );
+    }
 
 export default Projects;
