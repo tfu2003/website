@@ -28,7 +28,7 @@ function Intro() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
+    <div className="flex min-h-screen flex-col items-center pt-14 font-serif">
       <motion.div
         className="App"
         initial="hidden"
@@ -41,7 +41,7 @@ function Intro() {
           })}
         </div>
       </motion.div>
-      <div className="flex justify-between p-6 pt-20 w-2/3 space-x-10">
+      <div className="flex justify-between p-6 pt-16 w-2/3 space-x-10">
         <FadeIn delay="2000" transitionDuration="1000">
           <img src={Profile} alt="profile" className="max-w-xs" />
         </FadeIn>

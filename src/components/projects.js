@@ -61,7 +61,7 @@ function Projects() {
                 Prisma
               </a>
             </div>
-            <div className="grid grid-cols-1 gap-4 text-sm pt-3">
+            <div className="grid grid-cols-2 gap-4 text-sm pt-3">
               <a
                 href="https://docs.pmnd.rs/react-three-fiber/"
                 target="_blank"
@@ -69,6 +69,15 @@ function Projects() {
                 className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
               >
                 react-three-fiber
+              </a>
+
+              <a
+                href="https://www.npmjs.com/package/react-xr"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+              >
+                react-xr
               </a>
             </div>
           </div>
@@ -84,9 +93,10 @@ function Projects() {
           </div>
         </div>
       </div>
+
       <div className="flex items-center pl-6 pt-20 w-5/6 -space-x-12">
-        <div className="flex flex-col items-start">
-          <h1 className="text-xl pt-6 font-bold text-end">Reci One</h1>
+        <div className="flex flex-col">
+          <h1 className="text-xl pt-6 font-bold text-start">Reci One</h1>
           <div className="pt-3 z-10">
             <p className="text-base bg-pink-300 p-5">
               Need a way to keep a record of your recipes? Reci One is a recipe
@@ -99,7 +109,7 @@ function Projects() {
               More functionality to come!
             </p>
           </div>
-          <div className="flex flex-col items-center pt-3 pl-1">
+          <div className="flex flex-col items-center pt-3 pr-12">
             <div className="text-lg font-bold">
               Tools used:
             </div>
@@ -156,9 +166,9 @@ function Projects() {
                 </a>
               </div>
           </div>
-          <div className="pt-3 text-end">
+          <div className="pt-3 text-start">
             <a
-              href="https://github.com/marcusgchan/speech-simulator"
+              href="https://github.com/marcusgchan/reci-one"
               target="_blank"
               rel="noreferrer"
               className="font-bold"
