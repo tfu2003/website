@@ -1,6 +1,6 @@
 import Speech from "./images/speech-simulator.png";
 import Reci from "./images/reci-one.png";
-import Trade from "./images/trade-designer.png"
+import Trade from "./images/trade-designer.png";
 
 function Projects() {
   return (
@@ -9,31 +9,31 @@ function Projects() {
       <div className="flex items-center pl-6 pt-12 -space-x-12 w-5/6">
         <img src={Speech} alt="speech" className="max-w-2xl" />
         <div className="flex flex-col">
-            <h1 className="text-xl font-bold text-end">
-              VR Speech Simulator
+          <h1 className="text-xl font-bold text-end">
+            VR Speech Simulator
+            <br />
+            [nwHacks 2023 Winner]
+          </h1>
+          <div className="pt-3">
+            <p className="text-base bg-pink-300 p-5">
+              VR Speech Simulator allows you practice your public speaking
+              within an immersive environment. Import a script and put on a
+              headset to get started. Once started, VR Speech Simulator will
+              provide feedback on how to perfect your speech!
               <br />
-              [nwHacks 2023 Winner]
-            </h1>
-            <div className="pt-3">
-              <p className="text-base bg-pink-300 p-5">
-                VR Speech Simulator allows you practice your public speaking
-                within an immersive environment. Import a script and put on a
-                headset to get started. Once started, VR Speech Simulator will
-                provide feedback on how to perfect your speech!
-                <br />
-                <br />
-                Placed 3rd out of 131 projects in the largest hackathon in
-                Western Canada. Interested?&nbsp;
-                <a
-                  href="https://devpost.com/software/vr-speech-simulator"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-bold"
-                >
-                  Click to read more!
-                </a>
-              </p>
-            </div>
+              <br />
+              Placed 3rd out of 131 projects in the largest hackathon in Western
+              Canada. Interested?&nbsp;
+              <a
+                href="https://devpost.com/software/vr-speech-simulator"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold"
+              >
+                Click to read more!
+              </a>
+            </p>
+          </div>
           <div className="flex flex-col items-center pt-3 pl-12">
             <div className="text-lg font-bold">Tools used:</div>
             <div className="grid grid-cols-3 gap-4 text-sm pt-3">
@@ -111,9 +111,7 @@ function Projects() {
             </p>
           </div>
           <div className="flex flex-col items-center pt-3 pr-12">
-            <div className="text-lg font-bold">
-              Tools used:
-            </div>
+            <div className="text-lg font-bold">Tools used:</div>
             <div className="grid grid-cols-4 gap-4 text-sm pt-3">
               <a
                 href="https://nextjs.org/docs"
@@ -149,23 +147,23 @@ function Projects() {
               </a>
             </div>
             <div className="grid grid-cols-2 gap-4 text-sm pt-3">
-                <a
-                  href="https://zod.dev/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                >
-                  Zod
-                </a>
-                <a
-                  href="https://next-auth.js.org/getting-started/introduction"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
-                >
-                  NextAuth.js
-                </a>
-              </div>
+              <a
+                href="https://zod.dev/"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+              >
+                Zod
+              </a>
+              <a
+                href="https://next-auth.js.org/getting-started/introduction"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
+              >
+                NextAuth.js
+              </a>
+            </div>
           </div>
           <div className="pt-6 text-start">
             <a
@@ -186,29 +184,12 @@ function Projects() {
       <div className="flex items-center pt-20 pl-6 -space-x-12 w-5/6">
         <img src={Trade} alt="speech" className="max-w-2xl" />
         <div className="flex flex-col">
-            <h1 className="text-xl font-bold text-end">
-              Trade Designer
-            </h1>
-            <div className="pt-3">
-              <p className="text-base bg-pink-300 p-5">
-                VR Speech Simulator allows you practice your public speaking
-                within an immersive environment. Import a script and put on a
-                headset to get started. Once started, VR Speech Simulator will
-                provide feedback on how to perfect your speech!
-                <br />
-                <br />
-                Placed 3rd out of 131 projects in the largest hackathon in
-                Western Canada. Interested?&nbsp;
-                <a
-                  href="https://devpost.com/software/vr-speech-simulator"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-bold"
-                >
-                  Click to read more!
-                </a>
-              </p>
-            </div>
+          <h1 className="text-xl font-bold text-end">Trade Designer</h1>
+          <div className="pt-3">
+            <p className="text-base bg-pink-300 p-5">
+              NBA trade rumors are flying. Kyrie Irving has just been traded to the Dallas Mavericks and Kevin Durant might be next. Want to make your own mock trades that would drastically help your team? With this trade designer, you can create, delete and edit trades. You can even save your trades and load them in a future session!
+            </p>
+          </div>
           <div className="flex flex-col items-center pt-3 pl-12">
             <div className="text-lg font-bold">Tools used:</div>
             <div className="grid grid-cols-3 gap-4 text-sm pt-3">
@@ -240,7 +221,7 @@ function Projects() {
           </div>
           <div className="pt-6 text-end">
             <a
-              href="https://github.com/marcusgchan/speech-simulator"
+              href="https://github.com/tfu2003/trade-application"
               target="_blank"
               rel="noreferrer"
               className="font-bold"
@@ -250,6 +231,11 @@ function Projects() {
           </div>
         </div>
       </div>
+      <div className="pt-20"> 
+      <button className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450">
+        Check out my other projects!
+      </button>
+      </div> 
     </div>
   );
 }

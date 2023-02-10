@@ -9,11 +9,11 @@ function Header() {
   return (
     <div
       style={{
-        zIndex: "1",
+        zIndex: "20",
       }}
       className={`sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
-      } h-24 bg-blue-200 transition-all duration-500 z-100`}
+      } h-24 bg-blue-200 transition-all duration-500`}
     >
       <div className="flex justify-between">
         <div className="font-bold font-sans text-lg grid content-center h-24">
