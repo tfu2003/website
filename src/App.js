@@ -1,6 +1,6 @@
-import Intro from "./components/intro";
-import Header from "./components/header";
 import { useEffect } from "react";
+import Header from "./components/header";
+import Intro from "./components/intro";
 
 function App() {
   useEffect(() => {
@@ -8,10 +8,8 @@ function App() {
   }, [])
   return (
     <div className="bg-gradient-to-r from-violet-200 to-pink-200 background">
-      <div>
-        <Header />
-        <Intro />
-      </div>
+      <Header/>
+      <Intro/>
     </div>
   );
 }
