@@ -4,6 +4,7 @@ import Trade from "./images/trade-designer.png";
 import { useNavigate } from "react-router-dom";
 
 function Project() {
+  
   let navigate = useNavigate(); 
   const route = () =>{ 
     let path = `/projects`; 
