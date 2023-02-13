@@ -185,12 +185,12 @@ function Project() {
           </div>
         </div>
         <div className="z-0">
-          <img src={Reci} alt="speech" className="max-w-2xl" />
+          <img src={Reci} alt="reci" className="max-w-2xl" />
         </div>
       </div>
 
       <div className="flex items-center pt-20 pl-6 -space-x-12 w-5/6">
-        <img src={Trade} alt="speech" className="max-w-2xl" />
+        <img src={Trade} alt="trade" className="max-w-2xl" />
         <div className="flex flex-col">
           <h1 className="text-xl font-bold text-end">Trade Designer</h1>
           <div className="pt-3">
