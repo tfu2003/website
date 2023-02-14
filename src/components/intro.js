@@ -72,7 +72,7 @@ function Intro() {
           </FadeIn>
         </div>
       </div>
-      <div style={{ height: "10rem" }} />
+      <div style={{ height: "5rem" }} />
       <div ref={ref}>
         <Project />
       </div>

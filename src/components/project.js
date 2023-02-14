@@ -243,7 +243,7 @@ function Project() {
           </div>
         </div>
       </div>
-      <div className="pt-20">
+      <div className="pt-16">
         <button
           className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
           onClick={route}
