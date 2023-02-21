@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Website from "./images/website.png"
 import List from "./images/to-do-list.png";
 import Space from "./images/space-invaders.png";
 import { useEffect } from "react";
@@ -22,7 +23,7 @@ function Projects() {
         knowledge with some technologies.
       </p>
       <div className="flex items-center pl-6 pt-12 -space-x-12 w-5/6">
-        <img src={List} alt="list" className="max-w-2xl" />
+        <img src={Website} alt="website" className="max-w-2xl" />
         <div className="flex flex-col">
           <h1 className="text-2xl font-bold text-end">Personal Website</h1>
           <div className="pt-3">
