@@ -14,9 +14,9 @@ function Project() {
   return (
     <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
       <h1 className="text-3xl font-bold">Projects!</h1>
-      <div className="flex items-center pl-6 pt-12 -space-x-12 w-5/6">
+      <div className="grid grid-cols-2 pl-6 pt-12 -space-x-12 w-5/6">
         <img src={Speech} alt="speech" className="max-w-2xl" />
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center">
           <h1 className="text-xl font-bold text-end">
             VR Speech Simulator
             <br />
@@ -103,8 +103,8 @@ function Project() {
         </div>
       </div>
 
-      <div className="flex items-center pl-6 pt-20 w-5/6 -space-x-12">
-        <div className="flex flex-col">
+      <div className="grid grid-cols-2 pl-6 pt-20 w-5/6 -space-x-12">
+        <div className="flex flex-col justify-center">
           <h1 className="text-xl font-bold text-start">Reci One</h1>
           <div className="pt-3 z-10">
             <p className="text-base bg-pink-300 p-5">
@@ -189,9 +189,9 @@ function Project() {
         </div>
       </div>
 
-      <div className="flex items-center pt-20 pl-6 -space-x-12 w-5/6">
+      <div className="grid grid-cols-2 pt-20 pl-6 -space-x-12 w-5/6">
         <img src={Trade} alt="trade" className="max-w-2xl" />
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center">
           <h1 className="text-xl font-bold text-end">Trade Designer</h1>
           <div className="pt-3">
             <p className="text-base bg-pink-300 p-5">

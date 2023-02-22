@@ -22,10 +22,10 @@ function Projects() {
         These are some smaller projects that I have worked on to expand my
         knowledge with some technologies.
       </p>
-      <div className="flex items-center pl-6 pt-12 -space-x-12 w-5/6">
+      <div className="grid grid-cols-2 pl-6 pt-12 -space-x-12 w-5/6">
         <img src={Website} alt="website" className="max-w-2xl" />
-        <div className="flex flex-col">
-          <h1 className="text-2xl font-bold text-end">Personal Website</h1>
+        <div className="flex flex-col justify-center">
+          <h1 className="text-xl font-bold text-end">Personal Website</h1>
           <div className="pt-3">
             <p className="text-base bg-pink-300 p-5">
               A website that I made to showcase my projects and experiences.
@@ -86,8 +86,8 @@ function Projects() {
         </div>
       </div>
 
-      <div className="flex items-center pl-6 pt-20 w-5/6 -space-x-12">
-        <div className="flex flex-col">
+      <div className="grid grid-cols-2 pl-6 pt-20 w-5/6 -space-x-12">
+        <div className="flex flex-col justify-center">
           <h1 className="text-xl font-bold text-start">Space Invaders</h1>
           <div className="pt-3 z-10">
             <p className="text-base bg-pink-300 p-5">
@@ -133,10 +133,10 @@ function Projects() {
         </div>
       </div>
 
-      <div className="flex items-center pl-6 pt-20 -space-x-12 w-5/6">
+      <div className="grid grid-cols-2 pl-6 pt-20 -space-x-12 w-5/6">
         <img src={List} alt="list" className="max-w-2xl" />
-        <div className="flex flex-col">
-          <h1 className="text-2xl font-bold text-end">To Do List</h1>
+        <div className="flex flex-col justify-center">
+          <h1 className="text-xl font-bold text-end">To Do List</h1>
           <div className="pt-3">
             <p className="text-base bg-pink-300 p-5">
               A simple to do list that allows users to add, delete, and edit to
