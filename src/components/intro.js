@@ -4,6 +4,7 @@ import Characters from "./characters";
 import FadeIn from "react-fade-in";
 import Profile from "./images/profile.jpeg";
 import Project from "./project";
+import Contacts from "./contacts";
 
 function Intro() {
   const title = [
@@ -28,7 +29,7 @@ function Intro() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center pt-14 font-serif">
+    <div className="flex flex-col items-center min-h-screen pt-14 font-serif">
       <motion.div
         className="App"
         initial="hidden"
@@ -46,10 +47,10 @@ function Intro() {
           <img src={Profile} alt="profile" className="max-w-xs" />
         </FadeIn>
         <div className="flex flex-col items-center">
-          <FadeIn delay="2200" transitionDuration="1000">
+          <FadeIn delay="2400" transitionDuration="1000">
             <h1 className="text-3xl pt-6 font-bold"> About me!</h1>
           </FadeIn>
-          <FadeIn delay="2200" transitionDuration="1000">
+          <FadeIn delay="2400" transitionDuration="1000">
             <p className="text-lg p-6">
               I am a self-motivated and passionate individual seeking to expand
               my knowledge in technology. Currently, I am a second year Computer
@@ -74,9 +75,14 @@ function Intro() {
       </div>
       <div style={{ height: "5rem" }} />
       <div ref={ref}>
+        <FadeIn delay="3200" transitionDuration="1000"> 
         <Project />
+        </FadeIn>
       </div>
       <div style={{ height: "10rem" }} />
+      <FadeIn delay="3600" transitionDuration="1000">
+        <Contacts/>
+      </FadeIn>
     </div>
   );
 }

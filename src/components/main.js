@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Header from "./header";
 import Intro from "./intro";
-import Contacts from "./contacts";
 
 function Main() {
     useEffect(() => {
@@ -11,7 +10,6 @@ function Main() {
         <div>
             <Header/>
             <Intro/>
-            <Contacts/>
         </div>
       );
     }
