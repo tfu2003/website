@@ -2,6 +2,7 @@ import Speech from "./images/speech-simulator.png";
 import Reci from "./images/reci-one.png";
 import Trade from "./images/trade-designer.png";
 import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 function Project() {
   
@@ -11,13 +12,33 @@ function Project() {
     navigate(path);
   }
 
+  const [width, setWidth] = useState(window.innerWidth);
+  const isMobile = width <= 800;
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
   return (
-    <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
+    <div className="flex flex-col items-center pt-10 font-serif">
       <h1 className="text-3xl font-bold">Projects!</h1>
-      <div className="md:grid md:grid-cols-2 pl-6 pt-12 -space-x-12 w-5/6">
-        <img src={Speech} alt="speech" className="max-w-2xl" />
-        <div className="md:flex md:flex-col md:justify-center">
-          <h1 className="text-xl font-bold text-end">
+      <div
+        className={`outer-container grid pl-6 pt-12 ${
+          isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
+        } w-5/6`}
+      >
+        <img src={Speech} alt="speech" className="max-w-full" />
+        <div className="flex flex-col justify-center">
+          <h1 className={`text-xl font-bold ${
+          isMobile ? "text-center pt-6" : "text-end"
+        }`}>
             VR Speech Simulator
             <br />
             [nwHacks 2023 Winner]
@@ -42,7 +63,7 @@ function Project() {
               </a>
             </p>
           </div>
-          <div className="flex flex-col items-center pt-3 pl-12">
+          <div className="flex flex-col items-center pt-3">
             <div className="text-lg font-bold">Tools used:</div>
             <div className="grid grid-cols-3 gap-4 text-sm pt-3">
               <a
@@ -90,7 +111,9 @@ function Project() {
               </a>
             </div>
           </div>
-          <div className="pt-6 text-end">
+          <div className={`pt-6 ${
+          isMobile ? "text-center pt-6" : "text-end"
+        }`}>
             <a
               href="https://github.com/marcusgchan/speech-simulator"
               target="_blank"

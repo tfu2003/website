@@ -1,4 +1,4 @@
-import { React, useRef, useState, useEffect } from "react";
+import React, {useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Characters from "./characters";
 import FadeIn from "react-fade-in";
@@ -31,7 +31,6 @@ function Intro() {
   const [width, setWidth] = useState(window.innerWidth);
   const isMobile = width <= 800;
 
-
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
@@ -51,15 +50,17 @@ function Intro() {
         animate={"visible"}
         variants={container}
       >
-        <div className="text-3xl text-center">
+        <div className={`text-center ${
+          isMobile ? "text-2xl" : "text-3xl"
+        }`}>
           {title.map((item, index) => {
             return <Characters {...item} key={index} />;
           })}
         </div>
       </motion.div>
       <div
-        className={`outer-container flex gap-16 ${
-          isMobile ? "flex-col items-center" : "flex-row"
+        className={`outer-container flex ${
+          isMobile ? "flex-col items-center gap-6" : "flex-row gap-16"
         } w-2/3`}
       >
         <FadeIn delay="2000" transitionDuration="1000">
@@ -73,7 +74,7 @@ function Intro() {
             <div className={` ${
           isMobile ? "text-center" : "text-left"
         }`}> 
-            <p className={`text-lg`}>
+            <p className="text-lg">
               I am a self-motivated and passionate individual seeking to expand
               my knowledge in technology. Currently, I am a second year Computer
               Science student at the University of British Columbia. At the
