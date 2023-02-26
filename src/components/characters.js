@@ -38,7 +38,7 @@ const Characters = (props) => {
 
   return (
     <Tag>
-      {words.map((word, index) => {
+      {words.map((_word, index) => {
         return (
           <Wrapper key={index}>
             {words[index].flat().map((element, index) => {
@@ -62,7 +62,6 @@ const Characters = (props) => {
           </Wrapper>
         );
       })}
-      {/* {} */}
     </Tag>
   );
 };

@@ -1,4 +1,4 @@
-import { React, useRef } from "react";
+import { React, useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Characters from "./characters";
 import FadeIn from "react-fade-in";
@@ -28,30 +28,52 @@ function Intro() {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const [width, setWidth] = useState(window.innerWidth);
+  const isMobile = width <= 800;
+
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
   return (
-    <div className="flex flex-col items-center min-h-screen pt-14 font-serif">
+    <div className="flex flex-col items-center gap-16 pt-14 font-serif">
       <motion.div
         className="App"
         initial="hidden"
         animate={"visible"}
         variants={container}
       >
-        <div className="text-3xl">
+        <div className="text-3xl text-center">
           {title.map((item, index) => {
             return <Characters {...item} key={index} />;
           })}
         </div>
       </motion.div>
-      <div className="flex justify-between p-6 pt-16 w-2/3 space-x-10">
+      <div
+        className={`outer-container flex gap-16 ${
+          isMobile ? "flex-col items-center" : "flex-row"
+        } w-2/3`}
+      >
         <FadeIn delay="2000" transitionDuration="1000">
           <img src={Profile} alt="profile" className="max-w-xs" />
         </FadeIn>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center gap-6">
           <FadeIn delay="2400" transitionDuration="1000">
-            <h1 className="text-3xl pt-6 font-bold"> About me!</h1>
+            <h1 className="text-3xl font-bold"> About me!</h1>
           </FadeIn>
           <FadeIn delay="2400" transitionDuration="1000">
-            <p className="text-lg p-6">
+            <div className={` ${
+          isMobile ? "text-center" : "text-left"
+        }`}> 
+            <p className={`text-lg`}>
               I am a self-motivated and passionate individual seeking to expand
               my knowledge in technology. Currently, I am a second year Computer
               Science student at the University of British Columbia. At the
@@ -62,6 +84,7 @@ function Intro() {
               curling dumbbells, binge-watching an entire Netflix series in 1
               day, or fulfilling my ever increasing need for caffeine.
             </p>
+            </div>
           </FadeIn>
           <FadeIn delay="2800" transitionDuration="1000">
             <button
