@@ -5,12 +5,11 @@ import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
 function Project() {
-  
-  let navigate = useNavigate(); 
-  const route = () =>{ 
-    let path = `/projects`; 
+  let navigate = useNavigate();
+  const route = () => {
+    let path = `/projects`;
     navigate(path);
-  }
+  };
 
   const [width, setWidth] = useState(window.innerWidth);
   const isMobile = width <= 800;
@@ -30,15 +29,17 @@ function Project() {
     <div className="flex flex-col items-center pt-10 font-serif">
       <h1 className="text-3xl font-bold">Projects!</h1>
       <div
-        className={`outer-container grid pl-6 pt-12 ${
+        className={`outer-container grid pt-12 ${
           isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
         } w-5/6`}
       >
         <img src={Speech} alt="speech" className="max-w-full" />
         <div className="flex flex-col justify-center">
-          <h1 className={`text-xl font-bold ${
-          isMobile ? "text-center pt-6" : "text-end"
-        }`}>
+          <h1
+            className={`text-xl font-bold ${
+              isMobile ? "text-center pt-6" : "text-end"
+            }`}
+          >
             VR Speech Simulator
             <br />
             [nwHacks 2023 Winner]
@@ -111,9 +112,7 @@ function Project() {
               </a>
             </div>
           </div>
-          <div className={`pt-6 ${
-          isMobile ? "text-center pt-6" : "text-end"
-        }`}>
+          <div className={`pt-6 ${isMobile ? "text-center pt-6" : "text-end"}`}>
             <a
               href="https://github.com/marcusgchan/speech-simulator"
               target="_blank"
@@ -126,96 +125,120 @@ function Project() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pl-6 pt-20 w-5/6 -space-x-12">
+      <div
+        className={`outer-container grid pt-12 ${
+          isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
+        } w-5/6`}
+      >
         <div className="flex flex-col justify-center">
-          <h1 className="text-xl font-bold text-start">Reci One</h1>
-          <div className="pt-3 z-10">
-            <p className="text-base bg-pink-300 p-5">
-              Need a way to keep a record of your recipes? Reci One is a recipe
-              website that lets users add, view and delete recipes. Users can
-              filter recipes based on key words such as ingredients and
-              nationalities and also set recipes as public or private. Keep your
-              recipes safe with Reci One!
-              <br />
-              <br />
-              More functionality to come!
-            </p>
-          </div>
-          <div className="flex flex-col items-center pt-3 pr-12">
-            <div className="text-lg font-bold">Tools used:</div>
-            <div className="grid grid-cols-4 gap-4 text-sm pt-3">
-              <a
-                href="https://nextjs.org/docs"
-                target="_blank"
-                rel="noreferrer"
-                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-              >
-                Next.js
-              </a>
-              <a
-                href="https://www.typescriptlang.org/"
-                target="_blank"
-                rel="noreferrer"
-                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-              >
-                TypeScript
-              </a>
-              <a
-                href="https://www.prisma.io/docs"
-                target="_blank"
-                rel="noreferrer"
-                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-              >
-                Prisma
-              </a>
-              <a
-                href="https://trpc.io/docs"
-                target="_blank"
-                rel="noreferrer"
-                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-              >
-                tRPC
-              </a>
-            </div>
-            <div className="grid grid-cols-2 gap-4 text-sm pt-3">
-              <a
-                href="https://zod.dev/"
-                target="_blank"
-                rel="noreferrer"
-                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-              >
-                Zod
-              </a>
-              <a
-                href="https://next-auth.js.org/getting-started/introduction"
-                target="_blank"
-                rel="noreferrer"
-                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
-              >
-                NextAuth.js
-              </a>
-            </div>
-          </div>
-          <div className="pt-6 text-start">
-            <a
-              href="https://github.com/marcusgchan/reci-one"
-              target="_blank"
-              rel="noreferrer"
-              className="font-bold"
+          <div>
+            <h1
+              className={`text-xl font-bold ${
+                isMobile ? "text-center" : "text-start"
+              }`}
             >
-              Link to Github
-            </a>
+              Reci One
+            </h1>
+            <div className="pt-3 z-10">
+              <p className="text-base bg-pink-300 p-5">
+                Need a way to keep a record of your recipes? Reci One is a
+                recipe website that lets users add, view and delete recipes.
+                Users can filter recipes based on key words such as ingredients
+                and nationalities and also set recipes as public or private.
+                Keep your recipes safe with Reci One!
+                <br />
+                <br />
+                More functionality to come!
+              </p>
+            </div>
+            <div className="flex flex-col items-center pt-3 pr-12">
+              <div className="text-lg font-bold">Tools used:</div>
+              <div className="grid grid-cols-4 gap-4 text-sm pt-3">
+                <a
+                  href="https://nextjs.org/docs"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+                >
+                  Next.js
+                </a>
+                <a
+                  href="https://www.typescriptlang.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+                >
+                  TypeScript
+                </a>
+                <a
+                  href="https://www.prisma.io/docs"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+                >
+                  Prisma
+                </a>
+                <a
+                  href="https://trpc.io/docs"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+                >
+                  tRPC
+                </a>
+              </div>
+              <div className="grid grid-cols-2 gap-4 text-sm pt-3">
+                <a
+                  href="https://zod.dev/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+                >
+                  Zod
+                </a>
+                <a
+                  href="https://next-auth.js.org/getting-started/introduction"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
+                >
+                  NextAuth.js
+                </a>
+              </div>
+            </div>
+            <div
+              className={`pt-6 ${isMobile ? "text-center pt-6" : "text-start"}`}
+            >
+              <a
+                href="https://github.com/marcusgchan/reci-one"
+                target="_blank"
+                rel="noreferrer"
+                className="font-bold"
+              >
+                Link to Github
+              </a>
+            </div>
           </div>
         </div>
         <div className="z-0">
-          <img src={Reci} alt="reci" className="max-w-2xl" />
+          <img src={Reci} alt="reci" className="max-w-auto" />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pt-20 pl-6 -space-x-12 w-5/6">
-        <img src={Trade} alt="trade" className="max-w-2xl" />
+      <div
+        className={`outer-container grid pt-12 ${
+          isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
+        } w-5/6`}
+      >
+        <img src={Trade} alt="trade" className="max-w-auto" />
         <div className="flex flex-col justify-center">
-          <h1 className="text-xl font-bold text-end">Trade Designer</h1>
+          <h1
+            className={`text-xl font-bold ${
+              isMobile ? "text-center pt-6" : "text-end"
+            }`}
+          >
+            Trade Designer
+          </h1>
           <div className="pt-3">
             <p className="text-base bg-pink-300 p-5">
               NBA trade rumors are flying. Kyrie Irving has just been traded to
@@ -225,7 +248,7 @@ function Project() {
               can even save your trades and load them in a future session!
             </p>
           </div>
-          <div className="flex flex-col items-center pt-3 pl-12">
+          <div className="flex flex-col items-center pt-3">
             <div className="text-lg font-bold">Tools used:</div>
             <div className="grid grid-cols-3 gap-4 text-sm pt-3">
               <a
@@ -254,7 +277,7 @@ function Project() {
               </a>
             </div>
           </div>
-          <div className="pt-6 text-end">
+          <div className={`pt-6 ${isMobile ? "text-center pt-6" : "text-end"}`}>
             <a
               href="https://github.com/tfu2003/trade-application"
               target="_blank"
