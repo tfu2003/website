@@ -33,7 +33,7 @@ function Project() {
           isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
         } w-5/6`}
       >
-        <img src={Speech} alt="speech" className="max-w-full" />
+        <img src={Speech} alt="speech" className="max-w-auto" />
         <div className="flex flex-col justify-center">
           <h1
             className={`text-xl font-bold ${
@@ -125,16 +125,104 @@ function Project() {
         </div>
       </div>
 
+      {isMobile ? <div
+        className="outer-container grid pt-12 grid-cols-1 w-5/6"
+      >
+        <img src={Reci} alt="reci" className="max-w-auto" />
+        <div className="flex flex-col justify-center">
+          <h1
+            className="text-xl font-bold text-center pt-6"
+          >
+          Reci One
+          </h1>
+          <div className="pt-3">
+            <p className="text-base bg-pink-300 p-5">
+              Need a way to keep a record of your recipes? Reci One is a recipe
+              website that lets users add, view and delete recipes. Users can
+              filter recipes based on key words such as ingredients and
+              nationalities and also set recipes as public or private. Keep your
+              recipes safe with Reci One!
+              <br />
+              <br />
+              More functionality to come!
+            </p>
+          </div>
+          <div className="flex flex-col items-center pt-3">
+            <div className="text-lg font-bold">Tools used:</div>
+            <div className="grid grid-cols-4 gap-4 text-sm pt-3">
+              <a
+                href="https://nextjs.org/docs"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+              >
+                Next.js
+              </a>
+              <a
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+              >
+                TypeScript
+              </a>
+              <a
+                href="https://www.prisma.io/docs"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+              >
+                Prisma
+              </a>
+              <a
+                href="https://trpc.io/docs"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+              >
+                tRPC
+              </a>
+            </div>
+            <div className="grid grid-cols-2 gap-4 text-sm pt-3">
+              <a
+                href="https://zod.dev/"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+              >
+                Zod
+              </a>
+              <a
+                href="https://next-auth.js.org/getting-started/introduction"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
+              >
+                NextAuth.js
+              </a>
+            </div>
+          </div>
+          <div
+            className="text-center pt-12"
+          >
+            <a
+              href="https://github.com/marcusgchan/reci-one"
+              target="_blank"
+              rel="noreferrer"
+              className="font-bold"
+            >
+              Link to Github
+            </a>
+          </div>
+        </div>
+      </div> : 
       <div
-        className={`outer-container grid pt-12 ${
-          isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
-        } w-5/6`}
+        className="outer-container grid pt-12 grid-cols-2 -space-x-12
+        w-5/6"
       >
         <div className="flex flex-col justify-center">
           <h1
-            className={`text-xl font-bold ${
-              isMobile ? "text-center pt-6" : "text-start"
-            }`}
+            className="text-xl font-bold text-start"
           >
             Reci One
           </h1>
@@ -206,7 +294,7 @@ function Project() {
             </div>
           </div>
           <div
-            className={`pt-6 ${isMobile ? "text-center pt-6" : "text-start"}`}
+            className="pt-6 text-start"
           >
             <a
               href="https://github.com/marcusgchan/reci-one"
@@ -222,6 +310,7 @@ function Project() {
           <img src={Reci} alt="reci" className="max-w-auto" />
         </div>
       </div>
+      }
 
       <div
         className={`outer-container grid pt-12 ${
