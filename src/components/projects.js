@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import Website from "./images/website.png"
+import Website from "./images/website.png";
 import List from "./images/to-do-list.png";
 import Space from "./images/space-invaders.png";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Projects() {
   useEffect(() => {
@@ -15,26 +15,56 @@ function Projects() {
     navigate(path);
   };
 
+  const [width, setWidth] = useState(window.innerWidth);
+  const isMobile = width <= 800;
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
-      <h1 className="text-3xl font-bold">A collection of my other projects!</h1>
-      <p className="text-xl pt-6">
+      <h1
+        className={`text-center font-bold ${
+          isMobile ? "text-2xl" : "text-3xl"
+        }`}
+      >
+        A collection of my other projects!
+      </h1>
+      <p className={`text-center pt-6 ${isMobile ? "text-md" : "text-xl"}`}>
         These are some smaller projects that I have worked on to expand my
         knowledge with some technologies.
       </p>
-      <div className="grid grid-cols-2 pl-6 pt-12 -space-x-12 w-5/6">
-        <img src={Website} alt="website" className="max-w-2xl" />
+      <div
+        className={`outer-container grid pt-12 ${
+          isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
+        } w-5/6`}
+      >
+        <img src={Website} alt="website" className="max-w-auto" />
         <div className="flex flex-col justify-center">
-          <h1 className="text-xl font-bold text-end">Personal Website</h1>
+          <h1
+            className={`text-xl font-bold ${
+              isMobile ? "text-center pt-6" : "text-end"
+            }`}
+          >
+            Personal Website
+          </h1>
           <div className="pt-3">
             <p className="text-base bg-pink-300 p-5">
               A website that I made to showcase my projects and experiences.
               This is a project that I made which helped me further develop my
-              skills in web development. I also used some tools that I was
-              unfamiliar with prior to making this project.
+              skills in web development. I also used some tools that I had less
+              experience with prior to making this project.
             </p>
           </div>
-          <div className="flex flex-col items-center pt-3 pl-12">
+          <div className="flex flex-col items-center pt-3">
             <div className="text-lg font-bold">Tools used:</div>
             <div className="grid grid-cols-3 gap-4 text-sm pt-3">
               <a
@@ -73,7 +103,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className="pt-6 text-end">
+          <div className={`pt-6 ${isMobile ? "text-center pt-6" : "text-end"}`}>
             <a
               href="https://github.com/tfu2003/website"
               target="_blank"
@@ -86,7 +116,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pl-6 pt-20 w-5/6 -space-x-12">
+      <div className="grid grid-cols-2 pt-20 w-5/6 -space-x-12">
         <div className="flex flex-col justify-center">
           <h1 className="text-xl font-bold text-start">Space Invaders</h1>
           <div className="pt-3 z-10">
@@ -129,14 +159,22 @@ function Projects() {
           </div>
         </div>
         <div className="z-0">
-          <img src={Space} alt="space" className="max-w-2xl" />
+          <img src={Space} alt="space" className="max-w-auto" />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pl-6 pt-20 -space-x-12 w-5/6">
-        <img src={List} alt="list" className="max-w-2xl" />
+      <div
+        className={`outer-container grid pt-12 ${
+          isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
+        } w-5/6`}
+      >
+        <img src={List} alt="list" className="max-w-auto" />
         <div className="flex flex-col justify-center">
-          <h1 className="text-xl font-bold text-end">To Do List</h1>
+          <h1
+            className={`text-xl font-bold ${
+              isMobile ? "text-center pt-6" : "text-end"
+            }`}
+          >To Do List</h1>
           <div className="pt-3">
             <p className="text-base bg-pink-300 p-5">
               A simple to do list that allows users to add, delete, and edit to
@@ -145,7 +183,7 @@ function Projects() {
               development.
             </p>
           </div>
-          <div className="flex flex-col items-center pt-3 pl-12">
+          <div className="flex flex-col items-center pt-3">
             <div className="text-lg font-bold">Tools used:</div>
             <div className="grid grid-cols-3 gap-4 text-sm pt-3">
               <a
@@ -174,7 +212,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className="pt-6 text-end">
+          <div className={`pt-6 ${isMobile ? "text-center pt-6" : "text-end"}`}>
             <a
               href="https://github.com/tfu2003/to-do-list"
               target="_blank"
