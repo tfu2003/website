@@ -203,7 +203,7 @@ function Project() {
             </div>
           </div>
           <div
-            className="text-center pt-12"
+            className="text-center pt-6"
           >
             <a
               href="https://github.com/marcusgchan/reci-one"
