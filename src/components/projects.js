@@ -32,7 +32,7 @@ function Projects() {
 
   return (
     <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
-      <FadeIn delay="1000" transitionDuration="1000">
+      <FadeIn delay="800" transitionDuration="1000">
         <h1
           className={`text-center font-bold ${
             isMobile ? "text-2xl" : "text-3xl"
@@ -41,7 +41,7 @@ function Projects() {
           A collection of my other projects!
         </h1>
       </FadeIn>
-      <FadeIn delay="1300" transitionDuration="1000">
+      <FadeIn delay="1100" transitionDuration="1000">
         <p className={`text-center pt-6 ${isMobile ? "text-md" : "text-xl"}`}>
           These are some smaller projects that I have worked on to expand my
           knowledge with some technologies.
@@ -52,11 +52,11 @@ function Projects() {
           isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
         } w-5/6`}
       >
-        <FadeIn delay="1600" transitionDuration="1000">
+        <FadeIn delay="1400" transitionDuration="1000">
           <img src={Website} alt="website" className="max-w-auto" />
         </FadeIn>
         <div className="flex flex-col justify-center">
-          <FadeIn delay="1600" transitionDuration="1000">
+          <FadeIn delay="1400" transitionDuration="1000">
             <div>
               <h1
                 className={`text-xl font-bold ${
@@ -131,11 +131,11 @@ function Projects() {
 
       {isMobile ? (
         <div className="outer-container grid pt-12 grid-cols-1 w-5/6">
-          <FadeIn delay="1600" transitionDuration="1000">
+          <FadeIn delay="1400" transitionDuration="1000">
             <img src={Space} alt="space" className="max-w-auto" />
           </FadeIn>
           <div className="flex flex-col justify-center">
-            <FadeIn delay="1600" transitionDuration="1000">
+            <FadeIn delay="1400" transitionDuration="1000">
               <div>
                 <h1 className="text-xl font-bold text-center pt-6">
                   Space Invaders
@@ -185,7 +185,7 @@ function Projects() {
       ) : (
         <div className="grid grid-cols-2 pt-12 w-5/6 -space-x-12">
           <div className="flex flex-col justify-center z-10">
-            <FadeIn delay="1600" transitionDuration="1000">
+            <FadeIn delay="1400" transitionDuration="1000">
               <div>
                 <h1 className="text-xl font-bold text-start">Space Invaders</h1>
                 <div className="pt-3">
@@ -230,7 +230,7 @@ function Projects() {
             </FadeIn>
           </div>
           <div className="z-0">
-            <FadeIn delay="1600" transitionDuration="1000">
+            <FadeIn delay="1400" transitionDuration="1000">
               <img src={Space} alt="space" className="max-w-auto z-0" />
             </FadeIn>
           </div>
@@ -242,11 +242,11 @@ function Projects() {
           isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
         } w-5/6`}
       >
-        <FadeIn delay="1600" transitionDuration="1000">
+        <FadeIn delay="1400" transitionDuration="1000">
           <img src={List} alt="list" className="max-w-auto" />
         </FadeIn>
         <div className="flex flex-col justify-center">
-          <FadeIn delay="1600" transitionDuration="1000">
+          <FadeIn delay="1400" transitionDuration="1000">
             <div>
               <h1
                 className={`text-xl font-bold ${
@@ -310,7 +310,7 @@ function Projects() {
       </div>
 
       <div className="pt-16 pb-5">
-        <FadeIn delay="1900" transitionDuration="1000">
+        <FadeIn delay="1700" transitionDuration="1000">
           <button
             className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
             onClick={route}
