@@ -82,7 +82,7 @@ function Intro() {
               <br />
               <br />
               While I'm not debugging code, you can either find me at the gym
-              curling dumbbells, binge-watching an entire Netflix series in 1
+              curling dumbbells, binge-watching an entire Netflix series in one
               day, or fulfilling my ever increasing need for caffeine.
             </p>
             </div>
