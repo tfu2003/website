@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail, MdLocationPin } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -25,13 +25,22 @@ function Header() {
         </div>
         <div className="flex items-center h-24">
           <div className="flex justify-end">
-            <div className="pr-2"> 
+            <div> 
             <a
               href="https://github.com/tfu2003"
               target="_blank"
               rel="noreferrer"
             >
               <AiFillGithub size="40px" />
+            </a>
+            </div>
+            <div>
+            <a
+              href="https://www.linkedin.com/in/tony-fu-837922218/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin size="40px" />
             </a>
             </div>
             <div className="pr-1"> 
