@@ -1,26 +1,10 @@
 import React, {useRef, useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import Characters from "./characters";
 import FadeIn from "react-fade-in";
 import Profile from "./images/profile.jpeg";
 import Project from "./project";
 import Contacts from "./contacts";
 
 function Intro() {
-  const title = [
-    {
-      text: "Hello! My name is Tony and welcome to my website!",
-    },
-  ];
-
-  const container = {
-    visible: {
-      transition: {
-        staggerChildren: 0.025,
-      },
-    },
-  };
-
   const ref = useRef(null);
 
   const handleClick = () => {
@@ -43,26 +27,19 @@ function Intro() {
 
   return (
     <div className="flex flex-col items-center gap-16 pt-14 font-serif">
-      <motion.div
-        className="App"
-        initial="hidden"
-        animate={"visible"}
-        variants={container}
-      >
+      <FadeIn delay="800" transitionDuration="1000">
         <div className={`text-center ${
           isMobile ? "text-2xl" : "text-3xl"
         }`}>
-          {title.map((item, index) => {
-            return <Characters {...item} key={index} />;
-          })}
+          Hello! My name is Tony and welcome to my website!
         </div>
-      </motion.div>
+        </FadeIn>
       <div
         className={`outer-container flex ${
           isMobile ? "flex-col items-center gap-6" : "flex-row gap-16"
         } w-2/3`}
       >
-        <FadeIn delay="1000" transitionDuration="1000">
+        <FadeIn delay="1100" transitionDuration="1000">
           <img src={Profile} alt="profile" className="max-w-xs" />
         </FadeIn>
         <div className="flex flex-col items-center gap-6">
@@ -86,7 +63,7 @@ function Intro() {
             </p>
             </div>
           </FadeIn>
-          <FadeIn delay="1800" transitionDuration="1000">
+          <FadeIn delay="1700" transitionDuration="1000">
             <button
               className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
               onClick={handleClick}
@@ -98,12 +75,12 @@ function Intro() {
       </div>
       <div style={{ height: "5rem" }} />
       <div ref={ref}>
-        <FadeIn delay="2200" transitionDuration="1000"> 
+        <FadeIn delay="2000" transitionDuration="1000"> 
         <Project />
         </FadeIn>
       </div>
       <div style={{ height: "10rem" }} />
-      <FadeIn delay="2600" transitionDuration="1000">
+      <FadeIn delay="2300" transitionDuration="1000">
         <Contacts/>
       </FadeIn>
     </div>
