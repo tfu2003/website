@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-violet-200 to-pink-200 background">
+    <div className="bg-rose-100 background">
       <div> 
       <Routes>
       <Route path="/" element={<Main />} />
