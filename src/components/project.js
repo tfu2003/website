@@ -240,7 +240,7 @@ function Project() {
           </div>
           <div className="flex flex-col items-center pt-3 pr-12">
             <div className="text-lg font-bold">Tools used:</div>
-            <div className="grid grid-cols-4 gap-4 text-sm pt-3">
+            <div className="grid grid-cols-3 gap-4 text-sm pt-3">
               <a
                 href="https://nextjs.org/docs"
                 target="_blank"
@@ -265,16 +265,8 @@ function Project() {
               >
                 Prisma
               </a>
-              <a
-                href="https://trpc.io/docs"
-                target="_blank"
-                rel="noreferrer"
-                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-              >
-                tRPC
-              </a>
             </div>
-            <div className="grid grid-cols-2 gap-4 text-sm pt-3">
+            <div className="grid grid-cols-3 gap-4 text-sm pt-3">
               <a
                 href="https://zod.dev/"
                 target="_blank"
@@ -290,6 +282,14 @@ function Project() {
                 className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
               >
                 NextAuth.js
+              </a>
+              <a
+                href="https://trpc.io/docs"
+                target="_blank"
+                rel="noreferrer"
+                className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
+              >
+                tRPC
               </a>
             </div>
           </div>
