@@ -9,7 +9,6 @@ import Contacts from "./contacts";
 function Intro() {
   const title = [
     {
-      type: "heading1",
       text: "Hello! My name is Tony and welcome to my website!",
     },
   ];
@@ -63,14 +62,14 @@ function Intro() {
           isMobile ? "flex-col items-center gap-6" : "flex-row gap-16"
         } w-2/3`}
       >
-        <FadeIn delay="2000" transitionDuration="1000">
+        <FadeIn delay="1000" transitionDuration="1000">
           <img src={Profile} alt="profile" className="max-w-xs" />
         </FadeIn>
         <div className="flex flex-col items-center gap-6">
-          <FadeIn delay="2400" transitionDuration="1000">
+          <FadeIn delay="1400" transitionDuration="1000">
             <h1 className="text-3xl font-bold"> About me!</h1>
           </FadeIn>
-          <FadeIn delay="2400" transitionDuration="1000">
+          <FadeIn delay="1400" transitionDuration="1000">
             <div className={` ${
           isMobile ? "text-center" : "text-left"
         }`}> 
@@ -87,7 +86,7 @@ function Intro() {
             </p>
             </div>
           </FadeIn>
-          <FadeIn delay="2800" transitionDuration="1000">
+          <FadeIn delay="1800" transitionDuration="1000">
             <button
               className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
               onClick={handleClick}
@@ -99,12 +98,12 @@ function Intro() {
       </div>
       <div style={{ height: "5rem" }} />
       <div ref={ref}>
-        <FadeIn delay="3200" transitionDuration="1000"> 
+        <FadeIn delay="2200" transitionDuration="1000"> 
         <Project />
         </FadeIn>
       </div>
       <div style={{ height: "10rem" }} />
-      <FadeIn delay="3600" transitionDuration="1000">
+      <FadeIn delay="2600" transitionDuration="1000">
         <Contacts/>
       </FadeIn>
     </div>
