@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import FadeIn from "react-fade-in";
 import Profile from "./images/profile.jpeg";
 import Project from "./project";
@@ -27,13 +27,11 @@ function Intro() {
 
   return (
     <div className="flex flex-col items-center gap-16 pt-14 font-serif">
-      <FadeIn delay="800" transitionDuration="1000">
-        <div className={`text-center ${
-          isMobile ? "text-2xl" : "text-3xl"
-        }`}>
+      <div className={`text-center ${isMobile ? "text-2xl" : "text-3xl"}`}>
+        <FadeIn delay="800" transitionDuration="1000">
           Hello! My name is Tony and welcome to my website!
-        </div>
         </FadeIn>
+      </div>
       <div
         className={`outer-container flex ${
           isMobile ? "flex-col items-center gap-6" : "flex-row gap-16"
@@ -47,20 +45,19 @@ function Intro() {
             <h1 className="text-3xl font-bold"> About me!</h1>
           </FadeIn>
           <FadeIn delay="1400" transitionDuration="1000">
-            <div className={` ${
-          isMobile ? "text-center" : "text-left"
-        }`}> 
-            <p className="text-lg">
-              I am a self-motivated and passionate individual seeking to expand
-              my knowledge in technology. Currently, I am a second year Computer
-              Science student at the University of British Columbia. At the
-              moment, I am interested in web development and machine learning.
-              <br />
-              <br />
-              While I'm not debugging code, you can either find me at the gym
-              curling dumbbells, binge-watching an entire Netflix series in one
-              day, or fulfilling my ever increasing need for caffeine.
-            </p>
+            <div className={` ${isMobile ? "text-center" : "text-left"}`}>
+              <p className="text-lg">
+                I am a self-motivated and passionate individual seeking to
+                expand my knowledge in technology. Currently, I am a second year
+                Computer Science student at the University of British Columbia.
+                At the moment, I am interested in web development and machine
+                learning.
+                <br />
+                <br />
+                While I'm not debugging code, you can either find me at the gym
+                curling dumbbells, binge-watching an entire Netflix series in
+                one day, or fulfilling my ever increasing need for caffeine.
+              </p>
             </div>
           </FadeIn>
           <FadeIn delay="1700" transitionDuration="1000">
@@ -75,13 +72,13 @@ function Intro() {
       </div>
       <div style={{ height: "5rem" }} />
       <div ref={ref}>
-        <FadeIn delay="2000" transitionDuration="1000"> 
-        <Project />
+        <FadeIn delay="2000" transitionDuration="1000">
+          <Project />
         </FadeIn>
       </div>
       <div style={{ height: "10rem" }} />
       <FadeIn delay="2300" transitionDuration="1000">
-        <Contacts/>
+        <Contacts />
       </FadeIn>
     </div>
   );

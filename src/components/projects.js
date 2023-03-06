@@ -31,7 +31,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="flex min-h-screen flex-col items-center pt-10 font-serif">
+    <div className="flex flex-col items-center pt-10 font-serif">
       <FadeIn delay="800" transitionDuration="1000">
         <h1
           className={`text-center font-bold ${
