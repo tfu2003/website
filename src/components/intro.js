@@ -26,7 +26,7 @@ function Intro() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center gap-12 pt-14 font-serif">
+    <div className="flex flex-col items-center justify-center gap-12 pt-14 font-serif">
       <div className={`text-center ${isMobile ? "text-2xl" : "text-3xl"}`}>
         <FadeIn delay="800" transitionDuration="1000">
           Hello! My name is Tony and welcome to my website!
@@ -34,7 +34,7 @@ function Intro() {
       </div>
       <div
         className={`outer-container flex ${
-          isMobile ? "flex-col items-center gap-6" : "flex-row gap-16"
+          isMobile ? "flex-col items-center gap-6" : "flex-row gap-16 pt-10"
         } w-2/3`}
       >
         <FadeIn delay="1100" transitionDuration="1000">
@@ -70,16 +70,17 @@ function Intro() {
           </FadeIn>
         </div>
       </div>
-      <div style={{ height: "5rem" }} />
+      <div style={{ height: "1rem" }} />
       <div ref={ref}>
         <FadeIn delay="2000" transitionDuration="1000">
           <Project />
         </FadeIn>
       </div>
-      <div style={{ height: "5rem" }} />
+      <div style={{ height: "1rem" }} />
       <FadeIn delay="2300" transitionDuration="1000">
         <Contacts />
       </FadeIn>
+      <div style={{ height: "1rem" }} />
     </div>
   );
 }
