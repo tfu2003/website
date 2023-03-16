@@ -16,14 +16,14 @@ function Header() {
       } h-24 bg-black transition-all duration-500`}
     >
       <div className="flex justify-between text-white">
-        <div className="font-bold font-sans text-lg grid content-center h-24">
+        <div className="font-bold font-sans text-lg grid content-center h-24 pl-4">
           <h1 className="pl-1.5">Tony Fu</h1>
           <div className="flex justify-start">
             <MdLocationPin size="25px" />
             <h1>Vancouver, British Columbia</h1>
           </div>
         </div>
-        <div className="flex items-center h-24">
+        <div className="flex items-center h-24 pr-4">
           <div className="flex justify-end">
             <div> 
             <a
