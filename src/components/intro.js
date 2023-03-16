@@ -32,7 +32,7 @@ function Intro() {
           Hello! My name is Tony and welcome to my website!
         </FadeIn>
       </div>
-      <FadeIn delay="1400" transitionDuration="1000">
+      <FadeIn delay="1100" transitionDuration="1000">
         <h1 className="text-3xl font-bold pt-6"> About me!</h1>
       </FadeIn>
       <div
@@ -40,7 +40,7 @@ function Intro() {
           isMobile ? "flex-col items-center gap-6" : "flex-row gap-10"
         }`}
       >
-        <FadeIn delay="1100" transitionDuration="1000">
+        <FadeIn delay="1400" transitionDuration="1000">
           <img
             src={Profile}
             alt="profile"
