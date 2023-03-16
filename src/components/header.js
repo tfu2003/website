@@ -13,9 +13,9 @@ function Header() {
       }}
       className={`sticky ${
         scrollDirection === "down" ? "-top-24" : "top-0"
-      } h-24 bg-blue-200 transition-all duration-500`}
+      } h-24 bg-black transition-all duration-500`}
     >
-      <div className="flex justify-between">
+      <div className="flex justify-between text-white">
         <div className="font-bold font-sans text-lg grid content-center h-24">
           <h1 className="pl-1.5">Tony Fu</h1>
           <div className="flex justify-start">

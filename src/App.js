@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-rose-100 background">
+    <div className="bg-gray-500 background">
       <div> 
       <Routes>
       <Route path="/" element={<Main />} />

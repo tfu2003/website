@@ -62,7 +62,7 @@ function Intro() {
           </FadeIn>
           <FadeIn delay="1700" transitionDuration="1000">
             <button
-              className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
+              className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-450"
               onClick={handleClick}
             >
               See more!

@@ -38,7 +38,9 @@ function Project() {
               isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
             }`}
           >
-            <img src={Speech} alt="speech" className="max-w-auto pb-12" />
+            <div className="pb-12">
+            <img src={Speech} alt="speech" className="max-w-auto border-solid border-2 border-black" />
+            </div>
             <div className="flex flex-col justify-center">
               <div className="">
                 <p className="text-base">
@@ -134,7 +136,7 @@ function Project() {
           <h1 className="text-xl font-bold text-center pt-6">Reci One</h1>
           {isMobile ? (
             <div className="outer-container grid pt-2 grid-cols-1">
-              <img src={Reci} alt="reci" className="max-w-auto" />
+              <img src={Reci} alt="reci" className="max-w-auto " />
               <div className="flex flex-col justify-center">
                 <div className="pt-3">
                   <p className="text-base">
@@ -301,7 +303,7 @@ function Project() {
                 </div>
               </div>
               <div className="pb-12">
-                <img src={Reci} alt="reci" className="max-w-auto" />
+                <img src={Reci} alt="reci" className="max-w-auto border-solid border-2 border-black" />
               </div>
             </div>
           )}
@@ -313,7 +315,7 @@ function Project() {
               isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
             }`}
           >
-            <img src={Trade} alt="trade" className="max-w-auto" />
+            <img src={Trade} alt="trade" className="max-w-auto border-solid border-2 border-black"/>
             <div className="flex flex-col justify-center">
               <div>
                 <p className="text-base">
@@ -373,7 +375,7 @@ function Project() {
           </div>
           <div className="flex flex-col items-center pt-16">
             <button
-              className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
+              className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-450"
               onClick={route}
             >
               Check out my other projects!
