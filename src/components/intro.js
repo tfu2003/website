@@ -26,26 +26,31 @@ function Intro() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-12 pt-14 font-serif">
+    <div className="flex flex-col items-center justify-center gap-6 pt-14 font-serif">
       <div className={`text-center ${isMobile ? "text-2xl" : "text-3xl"}`}>
         <FadeIn delay="800" transitionDuration="1000">
           Hello! My name is Tony and welcome to my website!
         </FadeIn>
       </div>
+      <FadeIn delay="1400" transitionDuration="1000">
+        <h1 className="text-3xl font-bold pt-6"> About me!</h1>
+      </FadeIn>
       <div
-        className={`outer-container flex ${
-          isMobile ? "flex-col items-center gap-6" : "flex-row gap-16 pt-10"
-        } w-2/3`}
+        className={`flex w-2/3 ${
+          isMobile ? "flex-col items-center gap-6" : "flex-row gap-10"
+        }`}
       >
         <FadeIn delay="1100" transitionDuration="1000">
-          <img src={Profile} alt="profile" className="max-w-xs" />
+          <img
+            src={Profile}
+            alt="profile"
+            className="max-w-xs border-solid border-2 border-black"
+          />
         </FadeIn>
+        <div className="grid grid-cols-1 content-center"> 
         <div className="flex flex-col items-center gap-6">
           <FadeIn delay="1400" transitionDuration="1000">
-            <h1 className="text-3xl font-bold"> About me!</h1>
-          </FadeIn>
-          <FadeIn delay="1400" transitionDuration="1000">
-            <div className={` ${isMobile ? "text-center" : "text-left"}`}>
+            <div className={`${isMobile ? "text-center" : "text-left"}`}>
               <p className="text-lg">
                 I am a self-motivated and passionate individual seeking to
                 expand my knowledge in technology. Currently, I am a second year
@@ -68,6 +73,7 @@ function Intro() {
               See more!
             </button>
           </FadeIn>
+        </div>
         </div>
       </div>
       <div style={{ height: "1rem" }} />

@@ -27,15 +27,16 @@ function Project() {
 
   return (
     <div className="flex flex-col items-center pt-10 font-serif">
-      <h1 className="text-3xl font-bold">Projects!</h1>
-      <div className="divide-y-4 divide-solid divide-black w-2/3">
-        <div>
+      <div className="w-2/3"> 
+      <h1 className="text-3xl font-bold text-center">Projects!</h1>
+      <div className="divide-y-4 divide-solid divide-black">
+        <div className="">
           <h1 className="text-xl font-bold text-center pt-6">
             VR Speech Simulator [nwHacks 2023 Winner]
           </h1>
           <div
             className={`outer-container grid pt-2 ${
-              isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
+              isMobile ? "grid-cols-1" : "grid-cols-2 space-x-6"
             }`}
           >
             <div className="pb-12">
@@ -382,6 +383,7 @@ function Project() {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
