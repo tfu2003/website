@@ -42,8 +42,8 @@ function Project() {
             <div className="pb-12">
             <img src={Speech} alt="speech" className="max-w-auto border-solid border-2 border-black" />
             </div>
-            <div className="flex flex-col justify-center">
-              <div className="">
+            <div>
+              <div>
                 <p className="text-base">
                   VR Speech Simulator allows you practice your public speaking
                   within an immersive environment. Import a script and put on a
@@ -220,7 +220,7 @@ function Project() {
             </div>
           ) : (
             <div className="outer-container grid pt-2 grid-cols-2 space-x-6">
-              <div className="flex flex-col">
+              <div>
                 <div>
                   <p className="text-base">
                     Need a way to keep a record of your recipes? Reci One is a
@@ -309,6 +309,7 @@ function Project() {
             </div>
           )}
         </div>
+
         <div>
           <h1 className="text-xl font-bold text-center pt-6">Trade Designer</h1>
           <div
@@ -317,7 +318,7 @@ function Project() {
             }`}
           >
             <img src={Trade} alt="trade" className="max-w-auto border-solid border-2 border-black"/>
-            <div className="flex flex-col justify-center">
+            <div>
               <div>
                 <p className="text-base">
                   NBA trade rumors are flying. Kyrie Irving has just been traded
@@ -330,7 +331,7 @@ function Project() {
               </div>
               <div className="flex flex-col items-center pt-3">
                 <div className="text-lg font-bold">Tools used:</div>
-                <ul className="flex flex-row gap-12 text-sm pt-3 list-disc text-center">
+                <ul className="flex flex-row gap-8 text-sm pt-3 list-disc text-center">
                   <li> 
                   <a
                     href="https://docs.oracle.com/en/java/"
@@ -374,7 +375,7 @@ function Project() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center pt-16">
+          <div className="flex flex-col items-center pt-20">
             <button
               className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-450"
               onClick={route}

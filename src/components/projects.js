@@ -32,292 +32,307 @@ function Projects() {
 
   return (
     <div className="flex flex-col items-center pt-10 font-serif">
-      <FadeIn delay="800" transitionDuration="1000">
-        <h1
-          className={`text-center font-bold ${
-            isMobile ? "text-2xl" : "text-3xl"
-          }`}
-        >
-          A collection of my other projects!
-        </h1>
-      </FadeIn>
-      <FadeIn delay="1100" transitionDuration="1000">
-        <p className={`text-center pt-6 ${isMobile ? "text-md" : "text-xl"}`}>
-          These are some smaller projects that I have worked on to expand my
-          knowledge with some technologies.
-        </p>
-      </FadeIn>
-      <div
-        className={`outer-container grid pt-12 ${
-          isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
-        } w-5/6`}
-      >
-        <FadeIn delay="1400" transitionDuration="1000">
-          <img src={Website} alt="website" className="max-w-auto" />
+      <div className="w-2/3">
+        <FadeIn delay="800" transitionDuration="1000">
+          <h1
+            className={`text-center font-bold ${
+              isMobile ? "text-2xl" : "text-3xl"
+            }`}
+          >
+            A collection of my other projects!
+          </h1>
         </FadeIn>
-        <div className="flex flex-col justify-center">
+        <FadeIn delay="1100" transitionDuration="1000">
+          <p className={`text-center pt-6 ${isMobile ? "text-md" : "text-xl"}`}>
+            These are some smaller projects that I have worked on to expand my
+            knowledge with some technologies.
+          </p>
+        </FadeIn>
+        <div>
           <FadeIn delay="1400" transitionDuration="1000">
-            <div>
-              <h1
-                className={`text-xl font-bold ${
-                  isMobile ? "text-center pt-6" : "text-end"
-                }`}
-              >
-                Personal Website
-              </h1>
-              <div className="pt-3">
-                <p className="text-base bg-pink-300 p-5">
-                  A website that I made to showcase my projects and experiences.
-                  This is a project that I made which helped me further develop
-                  my skills in web development. I also used some tools that I
-                  had less experience with prior to making this project.
-                </p>
-              </div>
-              <div className="flex flex-col items-center pt-3">
-                <div className="text-lg font-bold">Tools used:</div>
-                <div className="grid grid-cols-3 gap-4 text-sm pt-3">
-                  <a
-                    href="https://reactjs.org/docs/getting-started.html"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                  >
-                    React
-                  </a>
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                  >
-                    JavaScript
-                  </a>
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                  >
-                    HTML
-                  </a>
-                </div>
-                <div className="grid grid-cols-1 gap-4 text-sm pt-3">
-                  <a
-                    href="https://v2.tailwindcss.com/docs"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                  >
-                    Tailwind CSS
-                  </a>
-                </div>
-              </div>
-              <div
-                className={`pt-6 ${isMobile ? "text-center pt-6" : "text-end"}`}
-              >
-                <a
-                  href="https://github.com/tfu2003/website"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-bold"
+            <div className="divide-y-4 divide-solid divide-black">
+              <div>
+                <h1 className="text-xl font-bold text-center pt-6">
+                  Personal Website
+                </h1>
+                <div
+                  className={`outer-container grid pt-2 ${
+                    isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
+                  }`}
                 >
-                  Link to Github
-                </a>
+                  <div className="pb-12">
+                    <img
+                      src={Website}
+                      alt="website"
+                      className="max-w-auto border-solid border-2 border-black"
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <p className="text-base">
+                          A website that I made to showcase my projects and
+                          experiences. This is a project that I made which
+                          helped me further develop my skills in web
+                          development. I also used some tools that I had less
+                          experience with prior to making this project.
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-center pt-3">
+                        <div className="text-lg font-bold">Tools used:</div>
+                        <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                          <li>
+                            <a
+                              href="https://reactjs.org/docs/getting-started.html"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              React
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              JavaScript
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              HTML
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://v2.tailwindcss.com/docs"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Tailwind CSS
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        className={`pt-5 pb-12 ${
+                          isMobile ? "text-center" : "text-end"
+                        }`}
+                      >
+                        <a
+                          href="https://github.com/tfu2003/website"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-bold"
+                        >
+                          Link to Github
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </FadeIn>
-        </div>
-      </div>
 
-      {isMobile ? (
-        <div className="outer-container grid pt-12 grid-cols-1 w-5/6">
-          <FadeIn delay="1400" transitionDuration="1000">
-            <img src={Space} alt="space" className="max-w-auto" />
-          </FadeIn>
-          <div className="flex flex-col justify-center">
-            <FadeIn delay="1400" transitionDuration="1000">
               <div>
                 <h1 className="text-xl font-bold text-center pt-6">
                   Space Invaders
                 </h1>
-                <div className="pt-3">
-                  <p className="text-base bg-pink-300 p-5">
-                    An interactive game where players shoot incoming aliens that
-                    are attacking the planet. I made this to give myself an
-                    introduction to game design.
-                  </p>
-                </div>
-                <div className="flex flex-col items-center pt-3">
-                  <div className="text-lg font-bold">Tools used:</div>
-                  <div className="grid grid-cols-2 gap-4 text-sm pt-3">
-                    <a
-                      href="https://docs.python.org/3/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                    >
-                      Python
-                    </a>
-                    <a
-                      href="https://www.pygame.org/docs/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                    >
-                      Pygame
-                    </a>
+                {isMobile ? (
+                  <div className="outer-container grid pt-12 grid-cols-1">
+                    <img src={Space} alt="space" className="max-w-auto" />
+                    <div className="flex flex-col justify-center">
+                      <div>
+                        <div className="pt-3">
+                          <p className="text-base bg-pink-300 p-5">
+                            An interactive game where players shoot incoming
+                            aliens that are attacking the planet. I made this to
+                            give myself an introduction to game design.
+                          </p>
+                        </div>
+                        <div className="flex flex-col items-center pt-3">
+                          <div className="text-lg font-bold">Tools used:</div>
+                          <div className="grid grid-cols-2 gap-4 text-sm pt-3">
+                            <a
+                              href="https://docs.python.org/3/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Python
+                            </a>
+                            <a
+                              href="https://www.pygame.org/docs/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Pygame
+                            </a>
+                          </div>
+                        </div>
+                        <div className="text-center pt-6">
+                          <a
+                            href="https://github.com/tfu2003/space-invaders"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-bold"
+                          >
+                            Link to Github
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="text-center pt-6">
-                  <a
-                    href="https://github.com/tfu2003/space-invaders"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-bold"
-                  >
-                    Link to Github
-                  </a>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
-        </div>
-      ) : (
-        <div className="grid grid-cols-2 pt-12 w-5/6 -space-x-12">
-          <div className="flex flex-col justify-center z-10">
-            <FadeIn delay="1400" transitionDuration="1000">
-              <div>
-                <h1 className="text-xl font-bold text-start">Space Invaders</h1>
-                <div className="pt-3">
-                  <p className="text-base bg-pink-300 p-5">
-                    An interactive game where players shoot incoming aliens that
-                    are attacking the planet. I made this to give myself an
-                    introduction to game design.
-                  </p>
-                </div>
-                <div className="flex flex-col items-center pt-3 pr-12">
-                  <div className="text-lg font-bold">Tools used:</div>
-                  <div className="grid grid-cols-2 gap-4 text-sm pt-3">
-                    <a
-                      href="https://docs.python.org/3/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                    >
-                      Python
-                    </a>
-                    <a
-                      href="https://www.pygame.org/docs/"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                    >
-                      Pygame
-                    </a>
+                ) : (
+                  <div className="grid grid-cols-2 pt-2 space-x-6">
+                    <div>
+                      <div>
+                        <div>
+                          <p className="text-base">
+                            An interactive game where players shoot incoming
+                            aliens that are attacking the planet. I made this to
+                            give myself an introduction to game design.
+                          </p>
+                        </div>
+                        <div className="flex flex-col items-center pt-3">
+                          <div className="text-lg font-bold">Tools used:</div>
+                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                            <li>
+                              <a
+                                href="https://docs.python.org/3/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Python
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.pygame.org/docs/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Pygame
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="pt-5 pb-12 text-start">
+                          <a
+                            href="https://github.com/tfu2003/space-invaders"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-bold"
+                          >
+                            Link to Github
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pb-12">
+                      <img
+                        src={Space}
+                        alt="space"
+                        className="max-w-auto border-solid border-2 border-black"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="pt-6 text-start">
-                  <a
-                    href="https://github.com/tfu2003/space-invaders"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-bold"
-                  >
-                    Link to Github
-                  </a>
-                </div>
+                )}
               </div>
-            </FadeIn>
-          </div>
-          <div className="z-0">
-            <FadeIn delay="1400" transitionDuration="1000">
-              <img src={Space} alt="space" className="max-w-auto z-0" />
-            </FadeIn>
-          </div>
-        </div>
-      )}
 
-      <div
-        className={`outer-container grid pt-12 ${
-          isMobile ? "grid-cols-1" : "grid grid-cols-2 -space-x-12"
-        } w-5/6`}
-      >
-        <FadeIn delay="1400" transitionDuration="1000">
-          <img src={List} alt="list" className="max-w-auto" />
-        </FadeIn>
-        <div className="flex flex-col justify-center">
-          <FadeIn delay="1400" transitionDuration="1000">
-            <div>
-              <h1
-                className={`text-xl font-bold ${
-                  isMobile ? "text-center pt-6" : "text-end"
-                }`}
-              >
-                To Do List
-              </h1>
-              <div className="pt-3">
-                <p className="text-base bg-pink-300 p-5">
-                  A simple to do list that allows users to add, delete, and edit
-                  to dos. The program has a save and load system. This was one
-                  of my first projects that I made which exposed me to basic web
-                  development.
-                </p>
-              </div>
-              <div className="flex flex-col items-center pt-3">
-                <div className="text-lg font-bold">Tools used:</div>
-                <div className="grid grid-cols-3 gap-4 text-sm pt-3">
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                  >
-                    JavaScript
-                  </a>
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                  >
-                    HTML
-                  </a>
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
-                  >
-                    CSS
-                  </a>
-                </div>
-              </div>
-              <div
-                className={`pt-6 ${isMobile ? "text-center pt-6" : "text-end"}`}
-              >
-                <a
-                  href="https://github.com/tfu2003/to-do-list"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-bold"
+              <div>
+                <h1 className="text-xl font-bold text-center pt-6">
+                  To Do List
+                </h1>
+                <div
+                  className={`outer-container grid pt-2 ${
+                    isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
+                  }`}
                 >
-                  Link to Github
-                </a>
+                  <div> 
+                  <img
+                    src={List}
+                    alt="list"
+                    className="max-w-auto border-solid border-2 border-black"
+                  />
+                  </div>
+                  <div className="flex flex-col justify-center">
+                    <div>
+                      <div>
+                        <p className="text-base">
+                          A simple to do list that allows users to add, delete,
+                          and edit to dos. The program has a save and load
+                          system. This was one of my first projects that I made
+                          which exposed me to basic web development.
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-center pt-3">
+                        <div className="text-lg font-bold">Tools used:</div>
+                        <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                          <li>
+                            <a
+                              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              JavaScript
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              HTML
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              CSS
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        className={`pt-6 ${
+                          isMobile ? "text-center" : "text-end"
+                        }`}
+                      >
+                        <a
+                          href="https://github.com/tfu2003/to-do-list"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-bold"
+                        >
+                          Link to Github
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </FadeIn>
         </div>
-      </div>
 
-      <div className="pt-16 pb-5">
-        <FadeIn delay="1700" transitionDuration="1000">
-          <button
-            className="border-2 border-pink-500 rounded-full text-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-4 transition duration-450"
-            onClick={route}
-          >
-            Go back
-          </button>
-        </FadeIn>
+        <div className="pt-20 pb-5 flex flex-col items-center">
+          <FadeIn delay="1700" transitionDuration="1000">
+            <button
+              className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-450"
+              onClick={route}
+            >
+              Go back
+            </button>
+          </FadeIn>
+        </div>
       </div>
     </div>
   );
