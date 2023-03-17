@@ -40,7 +40,7 @@ function Project() {
             }`}
           >
             <div className="pb-12">
-            <img src={Speech} alt="speech" className="max-w-auto border-solid border-2 border-black" />
+            <img src={Speech} alt="speech" className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500" />
             </div>
             <div>
               <div>
@@ -304,7 +304,7 @@ function Project() {
                 </div>
               </div>
               <div className="pb-12">
-                <img src={Reci} alt="reci" className="max-w-auto border-solid border-2 border-black" />
+                <img src={Reci} alt="reci" className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500" />
               </div>
             </div>
           )}
@@ -317,7 +317,7 @@ function Project() {
               isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
             }`}
           >
-            <img src={Trade} alt="trade" className="max-w-auto border-solid border-2 border-black"/>
+            <img src={Trade} alt="trade" className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"/>
             <div>
               <div>
                 <p className="text-base">
@@ -377,7 +377,7 @@ function Project() {
           </div>
           <div className="flex flex-col items-center pt-20">
             <button
-              className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-450"
+              className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-500"
               onClick={route}
             >
               Check out my other projects!

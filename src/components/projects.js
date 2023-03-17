@@ -64,7 +64,7 @@ function Projects() {
                     <img
                       src={Website}
                       alt="website"
-                      className="max-w-auto border-solid border-2 border-black"
+                      className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
                     />
                   </div>
                   <div>
@@ -236,7 +236,7 @@ function Projects() {
                       <img
                         src={Space}
                         alt="space"
-                        className="max-w-auto border-solid border-2 border-black"
+                        className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
                       />
                     </div>
                   </div>
@@ -256,7 +256,7 @@ function Projects() {
                   <img
                     src={List}
                     alt="list"
-                    className="max-w-auto border-solid border-2 border-black"
+                    className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
                   />
                   </div>
                   <div className="flex flex-col justify-center">
@@ -323,10 +323,10 @@ function Projects() {
           </FadeIn>
         </div>
 
-        <div className="pt-20 pb-5 flex flex-col items-center">
+        <div className="pt-20 pb-6 flex flex-col items-center">
           <FadeIn delay="1700" transitionDuration="1000">
             <button
-              className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-450"
+              className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-500"
               onClick={route}
             >
               Go back
