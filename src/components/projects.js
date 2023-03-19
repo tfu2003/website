@@ -143,7 +143,7 @@ function Projects() {
                   Space Invaders
                 </h1>
                 {isMobile ? (
-                  <div className="outer-container grid pt-12 grid-cols-1">
+                  <div className="outer-container grid pt-2 grid-cols-1">
                     <img src={Space} alt="space" className="max-w-auto" />
                     <div className="flex flex-col justify-center">
                       <div>
