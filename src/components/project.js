@@ -153,60 +153,64 @@ function Project() {
                 </div>
                 <div className="flex flex-col items-center pt-3">
                   <div className="text-lg font-bold">Tools used:</div>
-                  <div className="grid grid-cols-4 gap-4 text-sm pt-3 list-disc">
+                <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                    <li> 
                     <a
                       href="https://nextjs.org/docs"
                       target="_blank"
                       rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
                     >
                       Next.js
                     </a>
+                    </li>
+                    <li> 
                     <a
                       href="https://www.typescriptlang.org/"
                       target="_blank"
                       rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
                     >
                       TypeScript
                     </a>
+                    </li>
+                    <li> 
                     <a
                       href="https://www.prisma.io/docs"
                       target="_blank"
                       rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
                     >
                       Prisma
                     </a>
+                    </li>
+                    <li> 
                     <a
                       href="https://trpc.io/docs"
                       target="_blank"
                       rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
                     >
                       tRPC
                     </a>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 text-sm pt-3">
+                    </li>
+                    <li> 
                     <a
                       href="https://zod.dev/"
                       target="_blank"
                       rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450 text-center"
                     >
                       Zod
                     </a>
+                    </li>
+                    <li>
                     <a
                       href="https://next-auth.js.org/getting-started/introduction"
                       target="_blank"
                       rel="noreferrer"
-                      className="border-2 border-pink-500 shadow hover:shadow-md hover:shadow-pink-500 hover:opacity-50 p-2 transition duration-450"
                     >
                       NextAuth.js
                     </a>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
-                <div className="text-center pt-6">
+                <div className="text-center pt-6 pb-12">
                   <a
                     href="https://github.com/marcusgchan/reci-one"
                     target="_blank"
