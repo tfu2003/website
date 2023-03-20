@@ -12,7 +12,7 @@ function Project() {
   };
 
   const [width, setWidth] = useState(window.innerWidth);
-  const isMobile = width <= 800;
+  const isMobile = width <= 1000;
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -39,11 +39,7 @@ function Project() {
                 isMobile ? "grid-cols-1" : "grid-cols-2 space-x-6"
               }`}
             >
-              <div
-                className={`${
-                  isMobile ? "pb-3" : "pb-12"
-                }`}
-              >
+              <div className={`${isMobile ? "pb-3" : "pb-12"}`}>
                 <img
                   src={Speech}
                   alt="speech"
@@ -73,94 +69,61 @@ function Project() {
                 </div>
                 <div className="flex flex-col items-center pt-3">
                   <div className="text-lg font-bold">Tools used:</div>
-                  <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
-                    <li>
-                      <a
-                        href="https://nextjs.org/docs"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Next.js
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.typescriptlang.org/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        TypeScript
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.prisma.io/docs"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Prisma
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://docs.pmnd.rs/react-three-fiber/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-center"
-                      >
-                        react-three-fiber
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.npmjs.com/package/react-xr"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-center"
-                      >
-                        react-xr
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  className={`pt-5 pb-12 ${
-                    isMobile ? "text-center pt-6" : "text-end"
-                  }`}
-                >
-                  <a
-                    href="https://github.com/marcusgchan/speech-simulator"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-bold"
-                  >
-                    Link to Github
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h1 className="text-xl font-bold text-center pt-6">Reci One</h1>
-            {isMobile ? (
-              <div className="outer-container grid pt-2 grid-cols-1">
-                <img src={Reci} alt="reci" className="max-w-auto " />
-                <div className="flex flex-col justify-center">
-                  <div className="pt-3">
-                    <p className="text-base">
-                      Need a way to keep a record of your recipes? Reci One is a
-                      recipe website that lets users add, view and delete
-                      recipes. Users can filter recipes based on key words such
-                      as ingredients and nationalities and also set recipes as
-                      public or private. Keep your recipes safe with Reci One!
-                      <br />
-                      <br />
-                      More functionality to come!
-                    </p>
-                  </div>
-                  <div className="flex flex-col items-center pt-3">
-                    <div className="text-lg font-bold">Tools used:</div>
+                  {width <= 1200 ? (
+                    <div className="flex flex-col items-center">
+                      <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                        <li>
+                          <a
+                            href="https://nextjs.org/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Next.js
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.typescriptlang.org/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            TypeScript
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.prisma.io/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Prisma
+                          </a>
+                        </li>
+                      </ul>
+                      <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                        <li>
+                          <a
+                            href="https://docs.pmnd.rs/react-three-fiber/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-center"
+                          >
+                            react-three-fiber
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.npmjs.com/package/react-xr"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-center"
+                          >
+                            react-xr
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  ) : (
                     <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
                       <li>
                         <a
@@ -191,32 +154,188 @@ function Project() {
                       </li>
                       <li>
                         <a
-                          href="https://trpc.io/docs"
+                          href="https://docs.pmnd.rs/react-three-fiber/"
                           target="_blank"
                           rel="noreferrer"
+                          className="text-center"
                         >
-                          tRPC
+                          react-three-fiber
                         </a>
                       </li>
                       <li>
                         <a
-                          href="https://zod.dev/"
+                          href="https://www.npmjs.com/package/react-xr"
                           target="_blank"
                           rel="noreferrer"
+                          className="text-center"
                         >
-                          Zod
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://next-auth.js.org/getting-started/introduction"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          NextAuth.js
+                          react-xr
                         </a>
                       </li>
                     </ul>
+                  )}
+                </div>
+                <div
+                  className={`pt-5 pb-12 ${
+                    isMobile ? "text-center pt-6" : "text-end"
+                  }`}
+                >
+                  <a
+                    href="https://github.com/marcusgchan/speech-simulator"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-bold"
+                  >
+                    Link to Github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h1 className="text-xl font-bold text-center pt-6">Reci One</h1>
+            {isMobile ? (
+              <div className="outer-container grid pt-2 grid-cols-1">
+                <img
+                  src={Reci}
+                  alt="reci"
+                  className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
+                />
+                <div className="flex flex-col justify-center">
+                  <div className="pt-3">
+                    <p className="text-base">
+                      Need a way to keep a record of your recipes? Reci One is a
+                      recipe website that lets users add, view and delete
+                      recipes. Users can filter recipes based on key words such
+                      as ingredients and nationalities and also set recipes as
+                      public or private. Keep your recipes safe with Reci One!
+                      <br />
+                      <br />
+                      More functionality to come!
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-center pt-3">
+                    <div className="text-lg font-bold">Tools used:</div>
+                    {width <= 1300 ? (
+                      <div className="flex flex-col items-center">
+                        <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                          <li>
+                            <a
+                              href="https://nextjs.org/docs"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Next.js
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.typescriptlang.org/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              TypeScript
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.prisma.io/docs"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Prisma
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://zod.dev/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Zod
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                          <li>
+                            <a
+                              href="https://next-auth.js.org/getting-started/introduction"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              NextAuth.js
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://trpc.io/docs"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              tRPC
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    ) : (
+                      <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                        <li>
+                          <a
+                            href="https://nextjs.org/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Next.js
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.typescriptlang.org/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            TypeScript
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.prisma.io/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Prisma
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://zod.dev/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Zod
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://next-auth.js.org/getting-started/introduction"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            NextAuth.js
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://trpc.io/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            tRPC
+                          </a>
+                        </li>
+                      </ul>
+                    )}
                   </div>
                   <div className="text-center pt-6 pb-12">
                     <a
@@ -247,62 +366,125 @@ function Project() {
                   </div>
                   <div className="flex flex-col items-center pt-3">
                     <div className="text-lg font-bold">Tools used:</div>
-                    <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
-                      <li>
-                        <a
-                          href="https://nextjs.org/docs"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Next.js
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.typescriptlang.org/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          TypeScript
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.prisma.io/docs"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Prisma
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://zod.dev/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Zod
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://next-auth.js.org/getting-started/introduction"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          NextAuth.js
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://trpc.io/docs"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          tRPC
-                        </a>
-                      </li>
-                    </ul>
+                    {width <= 1300 ? (
+                      <div className="flex flex-col items-center">
+                        <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                          <li>
+                            <a
+                              href="https://nextjs.org/docs"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Next.js
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.typescriptlang.org/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              TypeScript
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.prisma.io/docs"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Prisma
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://zod.dev/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Zod
+                            </a>
+                          </li>
+                        </ul>
+                        <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                          <li>
+                            <a
+                              href="https://next-auth.js.org/getting-started/introduction"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              NextAuth.js
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://trpc.io/docs"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              tRPC
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    ) : (
+                      <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                        <li>
+                          <a
+                            href="https://nextjs.org/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Next.js
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.typescriptlang.org/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            TypeScript
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.prisma.io/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Prisma
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://zod.dev/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Zod
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://next-auth.js.org/getting-started/introduction"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            NextAuth.js
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://trpc.io/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            tRPC
+                          </a>
+                        </li>
+                      </ul>
+                    )}
                   </div>
                   <div className="pt-5 pb-12 text-start">
                     <a
@@ -335,17 +517,12 @@ function Project() {
                 isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
               }`}
             >
-              
-              <div
-                className={`${
-                  isMobile ? "pb-3" : "pb-12"
-                }`}
-              >
-              <img
-                src={Trade}
-                alt="trade"
-                className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
-              />
+              <div className={`${isMobile ? "pb-3" : "pb-12"}`}>
+                <img
+                  src={Trade}
+                  alt="trade"
+                  className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
+                />
               </div>
               <div>
                 <div>
