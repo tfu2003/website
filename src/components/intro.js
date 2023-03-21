@@ -12,7 +12,7 @@ function Intro() {
   };
 
   const [width, setWidth] = useState(window.innerWidth);
-  const isMobile = width <= 800;
+  const isMobile = width <= 1000;
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);

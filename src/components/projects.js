@@ -17,7 +17,7 @@ function Projects() {
   };
 
   const [width, setWidth] = useState(window.innerWidth);
-  const isMobile = width <= 800;
+  const isMobile = width <= 1000;
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -60,7 +60,7 @@ function Projects() {
                     isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
                   }`}
                 >
-                  <div className="pb-12">
+                  <div className={`${isMobile ? "pb-3" : "pb-12"}`}>
                     <img
                       src={Website}
                       alt="website"
@@ -144,11 +144,15 @@ function Projects() {
                 </h1>
                 {isMobile ? (
                   <div className="outer-container grid pt-2 grid-cols-1">
-                    <img src={Space} alt="space" className="max-w-auto" />
+                    <img
+                      src={Space}
+                      alt="space"
+                      className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
+                    />
                     <div className="flex flex-col justify-center">
                       <div>
                         <div className="pt-3">
-                          <p className="text-base bg-pink-300 p-5">
+                          <p className="text-base">
                             An interactive game where players shoot incoming
                             aliens that are attacking the planet. I made this to
                             give myself an introduction to game design.
@@ -156,24 +160,28 @@ function Projects() {
                         </div>
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-lg font-bold">Tools used:</div>
-                          <div className="grid grid-cols-2 gap-4 text-sm pt-3">
-                            <a
-                              href="https://docs.python.org/3/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              Python
-                            </a>
-                            <a
-                              href="https://www.pygame.org/docs/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              Pygame
-                            </a>
-                          </div>
+                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                            <li>
+                              <a
+                                href="https://docs.python.org/3/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Python
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.pygame.org/docs/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Pygame
+                              </a>
+                            </li>
+                          </ul>
                         </div>
-                        <div className="text-center pt-6">
+                        <div className="text-center pt-5 pb-12">
                           <a
                             href="https://github.com/tfu2003/space-invaders"
                             target="_blank"
@@ -252,12 +260,12 @@ function Projects() {
                     isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
                   }`}
                 >
-                  <div> 
-                  <img
-                    src={List}
-                    alt="list"
-                    className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
-                  />
+                  <div>
+                    <img
+                      src={List}
+                      alt="list"
+                      className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
+                    />
                   </div>
                   <div className="flex flex-col justify-center">
                     <div>
