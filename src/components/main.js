@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import Header from "./header";
-import Navbar from "./navbar";
 import Intro from "./intro";
 
 function Main() {

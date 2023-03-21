@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import FadeIn from "react-fade-in";
 import Profile from "./images/profile.jpeg";
 import Navbar from "./navbar";
+import Header from "./header";
 import Project from "./project";
 import Contacts from "./contacts";
 
@@ -28,7 +29,7 @@ function Intro() {
 
   return (
     <div> 
-      <Navbar/>
+      <Header/>
     <div className="flex flex-col items-center justify-center gap-6 pt-14 font-serif">
       <div className={`text-center ${isMobile ? "text-2xl" : "text-3xl"}`}>
         <FadeIn delay="800" transitionDuration="1000">
