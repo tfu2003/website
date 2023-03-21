@@ -6,6 +6,20 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const scrollDirection = useScrollDirection();
+  const [width, setWidth] = useState(window.innerWidth);
+  const isMobile = width <= 500;
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
   return (
     <div
       style={{
@@ -16,38 +30,50 @@ function Header() {
       } h-24 bg-black transition-all duration-500`}
     >
       <div className="flex justify-between text-white">
-        <div className="font-bold font-sans text-lg grid content-center h-24 pl-4">
+        <div
+          className={`font-bold font-sans grid content-center h-24 pl-4 ${
+            isMobile ? "text-md" : "text-lg"
+          }`}
+        >
           <h1 className="pl-1.5">Tony Fu</h1>
           <div className="flex justify-start">
-            <MdLocationPin size="25px" />
+            <MdLocationPin size={`${
+            isMobile ? "20px" : "25px"
+          }`} />
             <h1>Vancouver, British Columbia</h1>
           </div>
         </div>
         <div className="flex items-center h-24 pr-4">
           <div className="flex justify-end">
-            <div> 
-            <a
-              href="https://github.com/tfu2003"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiFillGithub size="40px" />
-            </a>
+            <div>
+              <a
+                href="https://github.com/tfu2003"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillGithub size={`${
+            isMobile ? "30px" : "40px"
+          }`}  />
+              </a>
             </div>
             <div>
-            <a
-              href="https://www.linkedin.com/in/tony-fu-837922218/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiFillLinkedin size="40px" />
-            </a>
+              <a
+                href="https://www.linkedin.com/in/tony-fu-837922218/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiFillLinkedin size={`${
+            isMobile ? "30px" : "40px"
+          }`} />
+              </a>
             </div>
-            <div className="pr-1"> 
-            <ButtonMailto
-              label={<MdEmail size="43px" />}
-              mailto="mailto:officialtonyfu@gmail.com"
-            />
+            <div className="pr-1">
+              <ButtonMailto
+                label={<MdEmail size={`${
+                  isMobile ? "32px" : "43px"
+                }`} />}
+                mailto="mailto:officialtonyfu@gmail.com"
+              />
             </div>
           </div>
         </div>
@@ -83,15 +109,15 @@ function useScrollDirection() {
 
 const ButtonMailto = ({ mailto, label }) => {
   return (
-      <Link
-        to="#"
-        onClick={(e) => {
-          window.location.href = mailto;
-          e.preventDefault();
-        }}
-      >
-        {label}
-      </Link>
+    <Link
+      to="#"
+      onClick={(e) => {
+        window.location.href = mailto;
+        e.preventDefault();
+      }}
+    >
+      {label}
+    </Link>
   );
 };
 
