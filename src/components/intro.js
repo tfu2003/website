@@ -44,7 +44,7 @@ function Intro() {
           <img
             src={Profile}
             alt="profile"
-            className="max-w-xs border-solid border-2 border-black"
+            className={`border-solid border-2 border-black ${width <= 500 ? "max-w-auto" : "max-w-xs"}`}
           />
         </FadeIn>
         <div className="grid grid-cols-1 content-center"> 
