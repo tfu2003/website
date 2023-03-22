@@ -5,7 +5,7 @@ import { MdLocationPin } from "react-icons/md";
 function Navbar() {
   const scrollDirection = useScrollDirection();
   const [width, setWidth] = useState(window.innerWidth);
-  const isMobile = width <= 500;
+  const isMobile = width <= 700;
   const handleClick = (id) => {
     document
       .querySelector(`#${id}`)
@@ -36,7 +36,7 @@ function Navbar() {
       <div className="flex justify-between text-white">
         <div
           className={`font-bold font-sans grid content-center h-24 pl-4 ${
-            isMobile ? "text-md" : "text-lg"
+            isMobile ? "text-sm" : "text-lg"
           }`}
         >
           <h1 className="pl-1.5">Tony Fu</h1>
@@ -45,7 +45,7 @@ function Navbar() {
             <h1>Vancouver, British Columbia</h1>
           </div>
         </div>
-        <div className="flex items-center justify-end h-24 gap-10 font-bold text-2xl">
+        <div className={`flex items-center justify-end h-24 font-bold ${isMobile ? "text-lg gap-2" : "text-2xl gap-10"}`}>
           <div>
             <button onClick={() => handleClick("about")}>
             About
@@ -56,7 +56,7 @@ function Navbar() {
             Projects
             </button>
           </div>
-          <div className="pr-10">
+          <div className="pr-4">
             <button onClick={() => handleClick("contacts")}> 
               Contacts
               </button>
