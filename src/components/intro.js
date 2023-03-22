@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import FadeIn from "react-fade-in";
 import Profile from "./images/profile.jpeg";
 import Navbar from "./navbar";
-import Header from "./header";
 import Project from "./project";
 import Contacts from "./contacts";
 
