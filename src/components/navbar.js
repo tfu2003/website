@@ -1,15 +1,21 @@
 import React from "react";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { MdLocationPin } from "react-icons/md";
 
-function Header() {
+function Navbar() {
   const scrollDirection = useScrollDirection();
   const [width, setWidth] = useState(window.innerWidth);
   const isMobile = width <= 500;
+  const handleClick = (id) => {
+    document
+      .querySelector(`#${id}`)
+      ?.scrollIntoView({behavior: "smooth"});
+  };
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
+  
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowSizeChange);
@@ -40,9 +46,21 @@ function Header() {
           </div>
         </div>
         <div className="flex items-center justify-end h-24 gap-10 font-bold text-2xl">
-          <div>About</div>
-          <div>Projects</div>
-          <div className="pr-10">Contacts</div>
+          <div>
+            <button onClick={() => handleClick("about")}>
+            About
+            </button>
+          </div>
+          <div>
+            <button onClick={() => handleClick("projects")}>
+            Projects
+            </button>
+          </div>
+          <div className="pr-10">
+            <button onClick={() => handleClick("contacts")}> 
+              Contacts
+              </button>
+            </div>
         </div>
       </div>
     </div>
@@ -74,4 +92,4 @@ function useScrollDirection() {
   return scrollDirection;
 }
 
-export default Header;
+export default Navbar;

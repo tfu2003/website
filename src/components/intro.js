@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import FadeIn from "react-fade-in";
 import Profile from "./images/profile.jpeg";
 import Navbar from "./navbar";
@@ -7,10 +7,11 @@ import Project from "./project";
 import Contacts from "./contacts";
 
 function Intro() {
-  const ref = useRef(null);
 
-  const handleClick = () => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+  const handleClick = (id) => {
+    document
+      .querySelector(`#${id}`)
+      ?.scrollIntoView({behavior: "smooth" });
   };
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -29,7 +30,7 @@ function Intro() {
 
   return (
     <div> 
-      <Header/>
+      <Navbar/>
     <div className="flex flex-col items-center justify-center gap-6 pt-14 font-serif">
       <div className={`text-center ${isMobile ? "text-2xl" : "text-3xl"}`}>
         <FadeIn delay="800" transitionDuration="1000">
@@ -37,13 +38,13 @@ function Intro() {
         </FadeIn>
       </div>
       <FadeIn delay="1100" transitionDuration="1000">
-        <h1 className="text-3xl font-bold pt-6"> About me!</h1>
+        <h1 className="text-3xl font-bold pt-6 scroll-m-20" id="about"> About me!</h1>
       </FadeIn>
       <div
         className={`flex w-2/3 ${
           isMobile ? "flex-col items-center gap-6" : "flex-row gap-10"
         }`}
-      >
+      > 
         <FadeIn delay="1400" transitionDuration="1000">
           <img
             src={Profile}
@@ -72,7 +73,7 @@ function Intro() {
           <FadeIn delay="1700" transitionDuration="1000">
             <button
               className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-500"
-              onClick={handleClick}
+              onClick={() => handleClick("projects")}
             >
               See more!
             </button>
@@ -81,15 +82,17 @@ function Intro() {
         </div>
       </div>
       <div style={{ height: "1rem" }} />
-      <div ref={ref}>
+      <div className="scroll-m-20" id="projects">
         <FadeIn delay="2000" transitionDuration="1000">
           <Project />
         </FadeIn>
       </div>
       <div style={{ height: "1rem" }} />
+      <div id="contacts"> 
       <FadeIn delay="2300" transitionDuration="1000">
         <Contacts />
       </FadeIn>
+      </div>
       <div style={{ height: "1rem" }} />
     </div>
     </div>
