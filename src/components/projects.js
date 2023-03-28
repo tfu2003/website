@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Website from "./images/website.png";
 import List from "./images/to-do-list.png";
 import Space from "./images/space-invaders.png";
+import Bot from "./images/discord-bot.png"
 import { useEffect, useState } from "react";
 import FadeIn from "react-fade-in";
 
@@ -260,7 +261,7 @@ function Projects() {
                     isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
                   }`}
                 >
-                  <div>
+                  <div className="pb-12">
                     <img
                       src={List}
                       alt="list"
@@ -310,7 +311,7 @@ function Projects() {
                         </ul>
                       </div>
                       <div
-                        className={`pt-6 ${
+                        className={`pt-6 pb-12 ${
                           isMobile ? "text-center" : "text-end"
                         }`}
                       >
@@ -327,6 +328,120 @@ function Projects() {
                   </div>
                 </div>
               </div>
+
+              <div>
+                <h1 className="text-xl font-bold text-center pt-6">
+                  Discord Gambling Bot
+                </h1>
+                {isMobile ? (
+                  <div className="outer-container grid pt-2 grid-cols-1">
+                    <img
+                      src={Bot}
+                      alt="space"
+                      className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
+                    />
+                    <div className="flex flex-col justify-center">
+                      <div>
+                        <div className="pt-3">
+                          <p className="text-base">
+                            An interactive game where players shoot incoming
+                            aliens that are attacking the planet. I made this to
+                            give myself an introduction to game design.
+                          </p>
+                        </div>
+                        <div className="flex flex-col items-center pt-3">
+                          <div className="text-lg font-bold">Tools used:</div>
+                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                            <li>
+                              <a
+                                href="https://docs.python.org/3/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Python
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.pygame.org/docs/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Pygame
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="text-center pt-5 pb-12">
+                          <a
+                            href="https://github.com/tfu2003/space-invaders"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-bold"
+                          >
+                            Link to Github
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 pt-2 space-x-6">
+                    <div>
+                      <div>
+                        <div>
+                          <p className="text-base">
+                            An interactive game where players shoot incoming
+                            aliens that are attacking the planet. I made this to
+                            give myself an introduction to game design.
+                          </p>
+                        </div>
+                        <div className="flex flex-col items-center pt-3">
+                          <div className="text-lg font-bold">Tools used:</div>
+                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                            <li>
+                              <a
+                                href="https://docs.python.org/3/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Python
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.pygame.org/docs/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Pygame
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="pt-5 pb-12 text-start">
+                          <a
+                            href="https://github.com/tfu2003/space-invaders"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-bold"
+                          >
+                            Link to Github
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pb-12">
+                      <img
+                        src={Bot}
+                        alt="bot"
+                        className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+
             </div>
           </FadeIn>
         </div>
