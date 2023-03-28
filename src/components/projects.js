@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Website from "./images/website.png";
 import List from "./images/to-do-list.png";
 import Space from "./images/space-invaders.png";
-import Bot from "./images/discord-bot.png"
+import Bot from "./images/discord-bot.png";
 import { useEffect, useState } from "react";
 import FadeIn from "react-fade-in";
 
@@ -344,9 +344,11 @@ function Projects() {
                       <div>
                         <div className="pt-3">
                           <p className="text-base">
-                            An interactive game where players shoot incoming
-                            aliens that are attacking the planet. I made this to
-                            give myself an introduction to game design.
+                            A discord bot that I made for friends that allowed
+                            them to gamble virtual points. This project allowed
+                            me to gain more experience with interacting with a
+                            database, and also helped improve my knowledge in
+                            JavaScript.
                           </p>
                         </div>
                         <div className="flex flex-col items-center pt-3">
@@ -374,7 +376,7 @@ function Projects() {
                         </div>
                         <div className="text-center pt-5 pb-12">
                           <a
-                            href="https://github.com/tfu2003/space-invaders"
+                            href="https://github.com/tfu2003/discord-bot"
                             target="_blank"
                             rel="noreferrer"
                             className="font-bold"
@@ -391,9 +393,11 @@ function Projects() {
                       <div>
                         <div>
                           <p className="text-base">
-                            An interactive game where players shoot incoming
-                            aliens that are attacking the planet. I made this to
-                            give myself an introduction to game design.
+                            A discord bot that I made for friends that allowed
+                            them to gamble virtual points. This project allowed
+                            me to gain more experience with interacting with a
+                            database, and also helped improve my knowledge in
+                            JavaScript.
                           </p>
                         </div>
                         <div className="flex flex-col items-center pt-3">
@@ -421,7 +425,7 @@ function Projects() {
                         </div>
                         <div className="pt-5 pb-12 text-start">
                           <a
-                            href="https://github.com/tfu2003/space-invaders"
+                            href="https://github.com/tfu2003/discord-bot"
                             target="_blank"
                             rel="noreferrer"
                             className="font-bold"
@@ -441,7 +445,6 @@ function Projects() {
                   </div>
                 )}
               </div>
-
             </div>
           </FadeIn>
         </div>
