@@ -353,23 +353,41 @@ function Projects() {
                         </div>
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-lg font-bold">Tools used:</div>
-                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                                                    <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
                             <li>
                               <a
-                                href="https://docs.python.org/3/"
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                                 target="_blank"
                                 rel="noreferrer"
                               >
-                                Python
+                                JavaScript
                               </a>
                             </li>
                             <li>
                               <a
-                                href="https://www.pygame.org/docs/"
+                                href="https://nodejs.org/en/docs"
                                 target="_blank"
                                 rel="noreferrer"
                               >
-                                Pygame
+                                Node.js
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                MongoDB
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://discord.js.org/#/docs/discord.js/main/general/welcome"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                discord.js
                               </a>
                             </li>
                           </ul>
@@ -402,23 +420,41 @@ function Projects() {
                         </div>
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-lg font-bold">Tools used:</div>
-                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                                                    <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
                             <li>
                               <a
-                                href="https://docs.python.org/3/"
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                                 target="_blank"
                                 rel="noreferrer"
                               >
-                                Python
+                                JavaScript
                               </a>
                             </li>
                             <li>
                               <a
-                                href="https://www.pygame.org/docs/"
+                                href="https://nodejs.org/en/docs"
                                 target="_blank"
                                 rel="noreferrer"
                               >
-                                Pygame
+                                Node.js
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                MongoDB
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://discord.js.org/#/docs/discord.js/main/general/welcome"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                discord.js
                               </a>
                             </li>
                           </ul>
