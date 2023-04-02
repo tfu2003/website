@@ -583,7 +583,7 @@ function Project() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center pt-20">
+            <div className="flex flex-col items-center pt-12">
               <button
                 className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-500"
                 onClick={route}
