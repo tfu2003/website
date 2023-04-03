@@ -28,7 +28,9 @@ function Intro() {
     <div>
       <Navbar />
       <div className="flex flex-col items-center justify-center gap-6 pt-14 font-serif">
-        <div className={`text-center w-2/3 ${isMobile ? "text-2xl" : "text-3xl"}`}>
+        <div
+          className={`text-center w-2/3 ${isMobile ? "text-2xl" : "text-3xl"}`}
+        >
           <FadeIn delay="800" transitionDuration="1000">
             Hello! My name is Tony and welcome to my website!
           </FadeIn>
@@ -59,16 +61,16 @@ function Intro() {
                 <div className={`${isMobile ? "text-center" : "text-left"}`}>
                   <p className="text-lg">
                     I am a self-motivated and passionate individual seeking to
-                    expand my knowledge in technology. Currently, I am a second
-                    year Computer Science student at the University of British
-                    Columbia. At the moment, I am interested in web development
-                    and machine learning.
+                    expand my knowledge in technology. Currently, I am in my
+                    second year studying Computer Science at the University of
+                    British Columbia. At the moment, I am interested in web
+                    development and machine learning and hoping to gain more
+                    experience in these fields.
                     <br />
                     <br />
-                    While I'm not debugging code, you can either find me at the
-                    gym curling dumbbells, binge-watching an entire Netflix
-                    series in one day, or fulfilling my ever increasing need for
-                    caffeine.
+                    Some hobbies of mine include: exercising by running outside
+                    or going to the gym, practicing piano, and playing soccer
+                    with my friends.
                   </p>
                 </div>
               </FadeIn>
