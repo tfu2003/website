@@ -81,44 +81,89 @@ function Projects() {
                       </div>
                       <div className="flex flex-col items-center pt-3">
                         <div className="text-lg font-bold">Tools used:</div>
-                        <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
-                          <li>
-                            <a
-                              href="https://reactjs.org/docs/getting-started.html"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              React
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              JavaScript
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              HTML
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://v2.tailwindcss.com/docs"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              Tailwind CSS
-                            </a>
-                          </li>
-                        </ul>
+                        {width <= 500 ? (
+                          <div className="flex flex-col items-center">
+                            <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                              <li>
+                                <a
+                                  href="https://reactjs.org/docs/getting-started.html"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  React
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  JavaScript
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  HTML
+                                </a>
+                              </li>
+                            </ul>
+                            <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                              <li>
+                                <a
+                                  href="https://v2.tailwindcss.com/docs"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  Tailwind CSS
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        ) : (
+                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                            <li>
+                              <a
+                                href="https://reactjs.org/docs/getting-started.html"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                React
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                JavaScript
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                HTML
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://v2.tailwindcss.com/docs"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Tailwind CSS
+                              </a>
+                            </li>
+                          </ul>
+                        )}
                       </div>
                       <div
                         className={`pt-5 pb-12 ${
@@ -353,7 +398,50 @@ function Projects() {
                         </div>
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-lg font-bold">Tools used:</div>
-                                                    <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                          {width <= 500 ? 
+                          <div className="flex flex-col items-center"> 
+                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                            <li>
+                              <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                JavaScript
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://nodejs.org/en/docs"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Node.js
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                MongoDB
+                              </a>
+                            </li>
+                            </ul>
+                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                            <li>
+                              <a
+                                href="https://discord.js.org/#/docs/discord.js/main/general/welcome"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                discord.js
+                              </a>
+                            </li>
+                          </ul> 
+                          </div> 
+                          : <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
                             <li>
                               <a
                                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
@@ -390,7 +478,8 @@ function Projects() {
                                 discord.js
                               </a>
                             </li>
-                          </ul>
+                          </ul>}
+                          
                         </div>
                         <div className="text-center pt-5 pb-12">
                           <a
@@ -420,7 +509,7 @@ function Projects() {
                         </div>
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-lg font-bold">Tools used:</div>
-                                                    <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
                             <li>
                               <a
                                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
