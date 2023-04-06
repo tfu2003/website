@@ -58,7 +58,7 @@ function Intro() {
           <div className="grid grid-cols-1 content-center">
             <div className="flex flex-col items-center gap-6">
               <FadeIn delay="1400" transitionDuration="1000">
-                <div className={`${isMobile ? "text-center" : "text-left"}`}>
+                <div>
                   <p className="text-lg">
                     I am a self-motivated and passionate individual seeking to
                     expand my knowledge in technology. Currently, I am in my
