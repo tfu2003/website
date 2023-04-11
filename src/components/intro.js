@@ -29,7 +29,7 @@ function Intro() {
       <Navbar />
       <div className="flex flex-col items-center justify-center gap-6 pt-14 font-serif">
         <div
-          className={`text-center w-2/3 ${isMobile ? "text-2xl" : "text-3xl"}`}
+          className={`text-center w-2/3 ${isMobile ? "text-xl" : "text-3xl"}`}
         >
           <FadeIn delay="800" transitionDuration="1000">
             Hello! My name is Tony and welcome to my website!
