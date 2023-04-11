@@ -44,7 +44,7 @@ function Projects() {
           </h1>
         </FadeIn>
         <FadeIn delay="1100" transitionDuration="1000">
-          <p className={`text-center pt-6 ${isMobile ? "text-md" : "text-xl"}`}>
+          <p className={`pt-6 ${isMobile ? "text-md" : "text-xl text-center"}`}>
             These are some smaller projects that I have worked on to expand my
             knowledge with some technologies.
           </p>
