@@ -91,7 +91,7 @@ function Intro() {
           </FadeIn>
         </div>
         <div style={{ height: "1rem" }} />
-        <div id="contacts">
+        <div id="contacts" className="w-2/3">
           <FadeIn delay="2300" transitionDuration="1000">
             <Contacts />
           </FadeIn>
