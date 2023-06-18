@@ -1,6 +1,5 @@
 import Speech from "./images/speech-simulator.png";
 import Reci from "./images/reci-one.png";
-import Trade from "./images/trade-designer.png";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
@@ -506,83 +505,6 @@ function Project() {
                 </div>
               </div>
             )}
-          </div>
-
-          <div>
-            <h1 className="text-xl font-bold text-center pt-6">
-              Trade Designer
-            </h1>
-            <div
-              className={`outer-container grid pt-2 ${
-                isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
-              }`}
-            >
-              <div className={`${isMobile ? "pb-3" : "pb-12"}`}>
-                <img
-                  src={Trade}
-                  alt="trade"
-                  className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
-                />
-              </div>
-              <div>
-                <div>
-                  <p className="text-base">
-                    NBA trade rumors are flying. Kyrie Irving has just been
-                    traded to the Dallas Mavericks and Kevin Durant might be
-                    next. Want to make your own mock trades that would
-                    drastically help your team? With this trade designer, you
-                    can create, delete and edit trades. You can even save your
-                    trades and load them in a future session!
-                  </p>
-                </div>
-                <div className="flex flex-col items-center pt-3">
-                  <div className="text-lg font-bold">Tools used:</div>
-                  <ul className="flex flex-row gap-8 text-sm pt-3 list-disc text-center">
-                    <li>
-                      <a
-                        href="https://docs.oracle.com/en/java/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Java
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Java Swing
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://junit.org/junit5/docs/current/user-guide/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        JUnit
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  className={`pt-6 ${
-                    isMobile ? "text-center pt-6" : "text-end"
-                  }`}
-                >
-                  <a
-                    href="https://github.com/tfu2003/trade-application"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-bold"
-                  >
-                    Link to Github
-                  </a>
-                </div>
-              </div>
-            </div>
             <div className="flex flex-col items-center pt-12">
               <button
                 className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-500"

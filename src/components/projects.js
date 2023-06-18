@@ -3,6 +3,7 @@ import Website from "./images/website.png";
 import List from "./images/to-do-list.png";
 import Space from "./images/space-invaders.png";
 import Bot from "./images/discord-bot.png";
+import Trade from "./images/trade-designer.png";
 import { useEffect, useState } from "react";
 import FadeIn from "react-fade-in";
 
@@ -398,88 +399,89 @@ function Projects() {
                         </div>
                         <div className="flex flex-col items-center pt-3">
                           <div className="text-lg font-bold">Tools used:</div>
-                          {width <= 500 ? 
-                          <div className="flex flex-col items-center"> 
-                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
-                            <li>
-                              <a
-                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                JavaScript
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://nodejs.org/en/docs"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                Node.js
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                MongoDB
-                              </a>
-                            </li>
+                          {width <= 500 ? (
+                            <div className="flex flex-col items-center">
+                              <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                                <li>
+                                  <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    JavaScript
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://nodejs.org/en/docs"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    Node.js
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    MongoDB
+                                  </a>
+                                </li>
+                              </ul>
+                              <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                                <li>
+                                  <a
+                                    href="https://discord.js.org/#/docs/discord.js/main/general/welcome"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    discord.js
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          ) : (
+                            <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                              <li>
+                                <a
+                                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  JavaScript
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://nodejs.org/en/docs"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  Node.js
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  MongoDB
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://discord.js.org/#/docs/discord.js/main/general/welcome"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  discord.js
+                                </a>
+                              </li>
                             </ul>
-                          <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
-                            <li>
-                              <a
-                                href="https://discord.js.org/#/docs/discord.js/main/general/welcome"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                discord.js
-                              </a>
-                            </li>
-                          </ul> 
-                          </div> 
-                          : <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
-                            <li>
-                              <a
-                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                JavaScript
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://nodejs.org/en/docs"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                Node.js
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                MongoDB
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://discord.js.org/#/docs/discord.js/main/general/welcome"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                discord.js
-                              </a>
-                            </li>
-                          </ul>}
-                          
+                          )}
                         </div>
                         <div className="text-center pt-5 pb-12">
                           <a
@@ -569,6 +571,82 @@ function Projects() {
                     </div>
                   </div>
                 )}
+              </div>
+              <div>
+                <h1 className="text-xl font-bold text-center pt-6">
+                  Trade Designer
+                </h1>
+                <div
+                  className={`outer-container grid pt-2 ${
+                    isMobile ? "grid-cols-1" : "grid grid-cols-2 space-x-6"
+                  }`}
+                >
+                  <div className={`${isMobile ? "pb-3" : "pb-12"}`}>
+                    <img
+                      src={Trade}
+                      alt="trade"
+                      className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <p className="text-base">
+                        NBA trade rumors are flying. Kyrie Irving has just been
+                        traded to the Dallas Mavericks and Kevin Durant might be
+                        next. Want to make your own mock trades that would
+                        drastically help your team? With this trade designer,
+                        you can create, delete and edit trades. You can even
+                        save your trades and load them in a future session!
+                      </p>
+                    </div>
+                    <div className="flex flex-col items-center pt-3">
+                      <div className="text-lg font-bold">Tools used:</div>
+                      <ul className="flex flex-row gap-8 text-sm pt-3 list-disc text-center">
+                        <li>
+                          <a
+                            href="https://docs.oracle.com/en/java/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Java
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Java Swing
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://junit.org/junit5/docs/current/user-guide/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            JUnit
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div
+                      className={`pt-6 ${
+                        isMobile ? "text-center pt-6" : "text-end"
+                      }`}
+                    >
+                      <a
+                        href="https://github.com/tfu2003/trade-application"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-bold"
+                      >
+                        Link to Github
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </FadeIn>
