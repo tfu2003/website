@@ -524,10 +524,10 @@ function Project() {
                 <div>
                   <p className="text-base">
                     Dreading future interviews for your dream job? Interview.ai
-                    provides a way to endlessly practice your interviews so
-                    that you will perfect them when the time comes. AI generated
+                    provides a way to endlessly practice your interviews so that
+                    you will perfect them when the time comes. AI generated
                     prompts will be different for each session so you can be
-                    ready for every question thrown at you!
+                    ready for every question thrown at you for the real thing!
                   </p>
                 </div>
                 <div className="flex flex-col items-center pt-3">
@@ -537,104 +537,104 @@ function Project() {
                       <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
                         <li>
                           <a
-                            href="https://nextjs.org/docs"
+                            href="https://reactjs.org/docs/getting-started.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            Next.js
+                            React
                           </a>
                         </li>
                         <li>
                           <a
-                            href="https://www.typescriptlang.org/"
+                            href="https://expressjs.com/"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            TypeScript
+                            Express.js
                           </a>
                         </li>
                         <li>
                           <a
-                            href="https://www.prisma.io/docs"
+                            href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            Prisma
+                            MongoDB
                           </a>
                         </li>
                       </ul>
                       <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
                         <li>
                           <a
-                            href="https://docs.pmnd.rs/react-three-fiber/"
+                            href="https://nodejs.org/en/docs"
                             target="_blank"
                             rel="noreferrer"
                             className="text-center"
                           >
-                            react-three-fiber
+                            Node.js
                           </a>
                         </li>
                         <li>
                           <a
-                            href="https://www.npmjs.com/package/react-xr"
+                            href="https://v2.tailwindcss.com/docs"
                             target="_blank"
                             rel="noreferrer"
                             className="text-center"
                           >
-                            react-xr
+                            Tailwind CSS
                           </a>
                         </li>
                       </ul>
                     </div>
                   ) : (
                     <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
-                      <li>
-                        <a
-                          href="https://nextjs.org/docs"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Next.js
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.typescriptlang.org/"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          TypeScript
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.prisma.io/docs"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Prisma
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://docs.pmnd.rs/react-three-fiber/"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-center"
-                        >
-                          react-three-fiber
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.npmjs.com/package/react-xr"
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-center"
-                        >
-                          react-xr
-                        </a>
-                      </li>
+                                           <li>
+                          <a
+                            href="https://reactjs.org/docs/getting-started.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            React
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://expressjs.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Express.js
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.mongodb.com/docs/manual/tutorial/getting-started/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            MongoDB
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://nodejs.org/en/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-center"
+                          >
+                            Node.js
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://v2.tailwindcss.com/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-center"
+                          >
+                            Tailwind CSS
+                          </a>
+                        </li>
                     </ul>
                   )}
                 </div>
@@ -644,7 +644,7 @@ function Project() {
                   }`}
                 >
                   <a
-                    href="https://github.com/marcusgchan/speech-simulator"
+                    href="https://github.com/Wowboylol/Interview.ai"
                     target="_blank"
                     rel="noreferrer"
                     className="font-bold"
