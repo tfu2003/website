@@ -29,7 +29,7 @@ function Project() {
       <div className="w-2/3">
         <h1 className="text-3xl font-bold text-center">Projects!</h1>
         <div className="divide-y-4 divide-solid divide-black">
-          <div className="">
+          <div>
             <h1 className="text-xl font-bold text-center pt-6">
               VR Speech Simulator [nwHacks 2023 Winner]
             </h1>
@@ -505,6 +505,155 @@ function Project() {
                 </div>
               </div>
             )}
+          </div>
+          <div>
+            <h1 className="text-xl font-bold text-center pt-6">Interview.ai</h1>
+            <div
+              className={`outer-container grid pt-2 ${
+                isMobile ? "grid-cols-1" : "grid-cols-2 space-x-6"
+              }`}
+            >
+              <div className={`${isMobile ? "pb-3" : "pb-12"}`}>
+                <img
+                  src={Speech}
+                  alt="speech"
+                  className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
+                />
+              </div>
+              <div>
+                <div>
+                  <p className="text-base">
+                    Dreading future interviews for your dream job? Interview.ai
+                    provides a way to endlessly practice your interviews so
+                    that you will perfect them when the time comes. AI generated
+                    prompts will be different for each session so you can be
+                    ready for every question thrown at you!
+                  </p>
+                </div>
+                <div className="flex flex-col items-center pt-3">
+                  <div className="text-lg font-bold">Tools used:</div>
+                  {(width <= 1200 && width > 1000) || width <= 750 ? (
+                    <div className="flex flex-col items-center">
+                      <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                        <li>
+                          <a
+                            href="https://nextjs.org/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Next.js
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.typescriptlang.org/"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            TypeScript
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.prisma.io/docs"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Prisma
+                          </a>
+                        </li>
+                      </ul>
+                      <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                        <li>
+                          <a
+                            href="https://docs.pmnd.rs/react-three-fiber/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-center"
+                          >
+                            react-three-fiber
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.npmjs.com/package/react-xr"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-center"
+                          >
+                            react-xr
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  ) : (
+                    <ul className="flex flex-row gap-8 text-sm pt-2 list-disc text-center">
+                      <li>
+                        <a
+                          href="https://nextjs.org/docs"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Next.js
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.typescriptlang.org/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          TypeScript
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.prisma.io/docs"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Prisma
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://docs.pmnd.rs/react-three-fiber/"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-center"
+                        >
+                          react-three-fiber
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.npmjs.com/package/react-xr"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-center"
+                        >
+                          react-xr
+                        </a>
+                      </li>
+                    </ul>
+                  )}
+                </div>
+                <div
+                  className={`pt-5 pb-12 ${
+                    isMobile ? "text-center pt-6" : "text-end"
+                  }`}
+                >
+                  <a
+                    href="https://github.com/marcusgchan/speech-simulator"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-bold"
+                  >
+                    Link to Github
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-col items-center pt-12">
               <button
                 className="border-2 border-black rounded-full shadow hover:shadow-md hover:opacity-50 p-4 transition duration-500"
