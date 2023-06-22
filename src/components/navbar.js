@@ -7,15 +7,12 @@ function Navbar() {
   const [width, setWidth] = useState(window.innerWidth);
   const isMobile = width <= 700;
   const handleClick = (id) => {
-    document
-      .querySelector(`#${id}`)
-      ?.scrollIntoView({behavior: "smooth"});
+    document.querySelector(`#${id}`)?.scrollIntoView({ behavior: "smooth" });
   };
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
   }
-  
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowSizeChange);
@@ -45,22 +42,20 @@ function Navbar() {
             <h1>Vancouver, British Columbia</h1>
           </div>
         </div>
-        <div className={`flex items-center justify-end h-24 font-bold ${isMobile ? "text-lg gap-2" : "text-2xl gap-10"}`}>
+        <div
+          className={`flex items-center justify-end h-24 font-bold ${
+            isMobile ? "text-lg gap-2" : "text-2xl gap-10"
+          }`}
+        >
           <div>
-            <button onClick={() => handleClick("about")}>
-            About
-            </button>
+            <button onClick={() => handleClick("about")}>About</button>
           </div>
           <div>
-            <button onClick={() => handleClick("projects")}>
-            Projects
-            </button>
+            <button onClick={() => handleClick("projects")}>Projects</button>
           </div>
           <div className="pr-4">
-            <button onClick={() => handleClick("contacts")}> 
-              Contacts
-              </button>
-            </div>
+            <button onClick={() => handleClick("contacts")}>Contacts</button>
+          </div>
         </div>
       </div>
     </div>

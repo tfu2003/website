@@ -25,7 +25,7 @@ function Project() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center pt-10 font-serif">
+    <div className="flex flex-col items-center pt-10 font-serif" id="projects">
       <div className="w-2/3">
         <h1 className="text-3xl font-bold text-center">Projects!</h1>
         <div className="divide-y-4 divide-solid divide-black">

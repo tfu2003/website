@@ -36,8 +36,7 @@ function Intro() {
           </FadeIn>
         </div>
         <FadeIn delay="1100" transitionDuration="1000">
-          <h1 className="text-3xl font-bold pt-6 scroll-m-20" id="about">
-            {" "}
+          <h1 className="text-3xl font-bold pt-6" id="about">
             About me!
           </h1>
         </FadeIn>
@@ -85,13 +84,13 @@ function Intro() {
           </div>
         </div>
         <div style={{ height: "1rem" }} />
-        <div className="scroll-m-20" id="projects">
+        <div className="scroll-m-20">
           <FadeIn delay="2000" transitionDuration="1000">
             <Project />
           </FadeIn>
         </div>
         <div style={{ height: "1rem" }} />
-        <div id="contacts" className="w-2/3">
+        <div className="w-2/3">
           <FadeIn delay="2300" transitionDuration="1000">
             <Contacts />
           </FadeIn>
