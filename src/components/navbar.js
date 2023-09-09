@@ -44,7 +44,7 @@ function Navbar() {
         </div>
         <div
           className={`flex items-center justify-end h-24 font-bold ${
-            isMobile ? "text-lg gap-2" : "text-2xl gap-10"
+            isMobile ? "text-lg gap-2" : "text-xl gap-10"
           }`}
         >
           <div>
