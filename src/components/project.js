@@ -1,5 +1,6 @@
 import Speech from "./images/speech-simulator.png";
 import Reci from "./images/reci-one.png";
+import Interview from "./images/interview.png"
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
@@ -515,8 +516,8 @@ function Project() {
             >
               <div className={`${isMobile ? "pb-3" : "pb-12"}`}>
                 <img
-                  src={Speech}
-                  alt="speech"
+                  src={Interview}
+                  alt="interview"
                   className="max-w-auto border-solid border-2 border-black opacity-30 hover:opacity-100 duration-500"
                 />
               </div>
