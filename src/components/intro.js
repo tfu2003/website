@@ -60,13 +60,15 @@ function Intro() {
                 <div>
                   <p className="text-lg">
                     I am a self-motivated and passionate individual seeking to
-                    expand my knowledge in technology. I am a third
-                    year student at The University of British Columbia, studying
-                    Computer Science. Currently, I am working at Jostle as a software
-                    developer focusing on the front-end. 
+                    expand my knowledge in technology. I am a third year student
+                    at The University of British Columbia, studying Computer
+                    Science. Currently, I am working at Jostle as a software
+                    developer focusing on front-end development. I am also a
+                    software developer for UBC Launch Pad.
                     <br />
                     <br />
-                    Some hobbies of mine include: hiking, playing spikeball and soccer, and going to the gym.
+                    Some hobbies of mine include: hiking, playing spikeball and
+                    soccer, and going to the gym.
                   </p>
                 </div>
               </FadeIn>
